@@ -1,6 +1,0 @@
-define(function () {
-	return {
-		reports: %(reports)s,
-		layout: %(layout)s
-	};
-});
