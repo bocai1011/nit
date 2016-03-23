@@ -1,0 +1,128 @@
+input {
+    position:fixed;
+    top:-1000px;
+}
+
+.custom-dropdown
+{
+    width:160;
+    padding:0;
+    text-align:'right'
+}
+
+td.cell-no-overflow
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* For row data cells inside the ColumnNameWidget.
+    Adds ellipsis proper to the underlying cell, assuming
+    the cell contexts are wrapped in a div element. */
+td.column-data-cell > div
+{
+    width:130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.textlike
+{
+    background:none!important;
+    border:none; 
+    padding:2;
+
+    font-family:arial,sans-serif;
+    cursor:default;
+}
+
+.dropdown-item
+{
+    background:none!important;
+    border:none; 
+    padding:2;
+
+    font-family:arial,sans-serif;
+    cursor:default;
+}
+
+ul.dropdown-list > li {
+    background: #eee;
+}
+
+ul.dropdown-list > li:hover {
+    background: #aaa;
+}
+
+
+
+
+.without table,
+.without td,
+.without tr,
+.without
+{
+	border:0px;
+	border-bottom:0px;
+	border-top:0px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.without-bottom td,
+.without-bottom tr
+{
+	border-bottom:0px;
+}
+
+.without-top td,
+.without-top tr
+{
+	border-top-width:0px;	
+}
+
+.warning-row td,
+.warning-row tr
+{
+	padding-top:0px;
+}
+
+.has-warning-row td,
+.has-warning-row tr
+{
+	padding-bottom:0px;
+}
+
+
+
+
+.tooltip{
+	display: inline;
+	position: relative;
+}
+
+.tooltip:hover:after{
+	background: #333;
+	background: rgba(0,0,0,.8);
+	border-radius: 5px;
+	bottom: 26px;
+	color: #fff;
+	content: attr(title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: 220px;
+}
+
+.tooltip:hover:before{
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 20px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 99;
+}
