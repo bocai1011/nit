@@ -1,0 +1,42 @@
+@import colors
+@import layouts
+
+/**
+ * Marketing Footer
+ */
+.marketing-content-wrapper
+  margin 2em 0
+  background color-white
+
+/* This is the class used for the main content headers (<h2>) */
+.marketing-content-head
+  letter-spacing 0.1em
+  font-size 25px
+
+/* This is the class used for the content sub-headers (<h3>) */
+.marketing-content-subhead
+  color color-primary
+
+.marketing-content-ribbon
+  padding 2em 0
+  background color-ribbon
+  color color-white
+
+.marketing-content-footer
+  background color-primary
+  color color-white
+
+
+/**
+ * Brief Footer
+ */
+footer.brief-footer
+  position fixed
+  top 'calc(100% - %s)' % footer-height
+  height footer-height
+  width 100%
+  border-top 1px solid color-primary
+  background-color color-white
+
+  h4
+    color color-primary

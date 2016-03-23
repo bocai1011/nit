@@ -1,0 +1,40 @@
+/**
+ * Styles for the ErrorNotification component.
+ * ===========================================
+ */
+.error-notification
+  position: fixed
+  top: 60px
+  right: 0
+  left: 0
+  z-index: 9999
+  max-width: 50%
+  margin: 0 auto
+
+.error-notification h3
+  margin-bottom: .5em
+
+.error-notification p
+  margin-bottom: .5em
+
+  &:last-child
+    margin-top: 1em
+    margin-bottom: 0
+    font-weight: bold
+
+// These special class names are for the ReactCSSTransitionGroup.
+// --------------------------------------------------------------
+
+.error-notification-appear
+  transition: transform .2s
+  transform: translateY(-100%) translateY(-60px)
+
+.error-notification-appear.error-notification-appear-active
+  transform: translateY(0)
+
+.error-notification-leave
+  transition: transform .2s
+  transform: translateY(0)
+
+.error-notification-leave.error-notification-leave-active
+  transform: translateY(-100%) translateY(-60px)

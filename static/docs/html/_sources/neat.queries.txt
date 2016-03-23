@@ -1,0 +1,82 @@
+neat.queries
+============
+
+neat.queries.XIFO
+-----------------
+
+.. automodule:: neat.queries.XIFO
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.commissions
+------------------------
+
+.. automodule:: neat.queries.commissions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.core
+-----------------
+
+.. automodule:: neat.queries.core
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.holdings
+---------------------
+
+.. automodule:: neat.queries.holdings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.legacy
+-------------------
+
+.. toctree::
+   :maxdepth: 3
+
+.. automodule:: neat.queries.legacy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.qa
+---------------
+
+.. automodule:: neat.queries.qa
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.reports
+--------------------
+
+.. automodule:: neat.queries.reports
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.test
+-----------------
+
+.. automodule:: neat.queries.test
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.queries.util
+-----------------
+
+.. automodule:: neat.queries.util
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+.. automodule:: neat.queries
+    :members:
+    :undoc-members:
+    :show-inheritance:

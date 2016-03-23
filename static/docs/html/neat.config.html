@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>neat.config &mdash; NEAT 3.0.6-293-g7df05a2-dirty documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="NEAT 3.0.6-293-g7df05a2-dirty documentation" href="index.html"/>
+        <link rel="next" title="neat.layouts" href="neat.layouts.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> NEAT</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="neat.html">neat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cache">neat.cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cases">neat.cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.db">neat.db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.kq">neat.kq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.pcl">neat.pcl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.query">neat.query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.rectify">neat.rectify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.staging">neat.staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#neat-web">neat.web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.wolf">neat.wolf</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">neat.config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.commissions">neat.config.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.comparisons">neat.config.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.dashboard">neat.config.dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.database">neat.config.database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.deepdrilldowns">neat.config.deepdrilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.defaults">neat.config.defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.drilldowns">neat.config.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.holdings">neat.config.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.legacy">neat.config.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.performance">neat.config.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.reports">neat.config.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.testing">neat.config.testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.config.transactions">neat.config.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.layouts.html">neat.layouts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.infer.html">neat.layouts.infer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.parser.html">neat.layouts.parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.api">neat.layouts.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.columns">neat.layouts.columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.config">neat.layouts.config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.notebook.html">neat.notebook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.queries.html">neat.queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.XIFO">neat.queries.XIFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.commissions">neat.queries.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.core">neat.queries.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.holdings">neat.queries.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#neat-queries-legacy">neat.queries.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.qa">neat.queries.qa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.reports">neat.queries.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.test">neat.queries.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.util">neat.queries.util</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.refdata.html">neat.refdata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.refdata.html#module-neat.refdata.currencies">neat.refdata.currencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.reports.html">neat.reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.links">neat.reports.links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.manager">neat.reports.manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.reports">neat.reports.reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.summary.html">neat.summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.commissions">neat.summary.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.comparisons">neat.summary.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.drilldowns">neat.summary.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.holdings">neat.summary.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.legacy">neat.summary.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.performance">neat.summary.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.transactions">neat.summary.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.util.html">neat.util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.async">neat.util.async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.util">neat.util.util</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">NEAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>neat.config</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/neat.config.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="neat-config">
+<h1>neat.config<a class="headerlink" href="#neat-config" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="module-neat.config.commissions">
+<span id="neat-config-commissions"></span><h2>neat.config.commissions<a class="headerlink" href="#module-neat.config.commissions" title="Permalink to this headline">¶</a></h2>
+<p>commission reports configurations</p>
+<dl class="function">
+<dt id="neat.config.commissions.histogram_commission_grouping_doco">
+<code class="descclassname">neat.config.commissions.</code><code class="descname">histogram_commission_grouping_doco</code><span class="sig-paren">(</span><em>grouper=None</em>, <em>cf_selector=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.commissions.histogram_commission_grouping_doco" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.config.comparisons">
+<span id="neat-config-comparisons"></span><h2>neat.config.comparisons<a class="headerlink" href="#module-neat.config.comparisons" title="Permalink to this headline">¶</a></h2>
+<p>comparison reports configurations</p>
+<dl class="function">
+<dt id="neat.config.comparisons.histogram_bi_doco">
+<code class="descclassname">neat.config.comparisons.</code><code class="descname">histogram_bi_doco</code><span class="sig-paren">(</span><em>grouper=None</em>, <em>field=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.comparisons.histogram_bi_doco" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.config.dashboard">
+<span id="neat-config-dashboard"></span><h2>neat.config.dashboard<a class="headerlink" href="#module-neat.config.dashboard" title="Permalink to this headline">¶</a></h2>
+<p>dashboard reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.database">
+<span id="neat-config-database"></span><h2>neat.config.database<a class="headerlink" href="#module-neat.config.database" title="Permalink to this headline">¶</a></h2>
+<p>reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.deepdrilldowns">
+<span id="neat-config-deepdrilldowns"></span><h2>neat.config.deepdrilldowns<a class="headerlink" href="#module-neat.config.deepdrilldowns" title="Permalink to this headline">¶</a></h2>
+<p>deepdrilldown reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.defaults">
+<span id="neat-config-defaults"></span><h2>neat.config.defaults<a class="headerlink" href="#module-neat.config.defaults" title="Permalink to this headline">¶</a></h2>
+<p>configurations</p>
+</div>
+<div class="section" id="module-neat.config.drilldowns">
+<span id="neat-config-drilldowns"></span><h2>neat.config.drilldowns<a class="headerlink" href="#module-neat.config.drilldowns" title="Permalink to this headline">¶</a></h2>
+<p>drilldown reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.holdings">
+<span id="neat-config-holdings"></span><h2>neat.config.holdings<a class="headerlink" href="#module-neat.config.holdings" title="Permalink to this headline">¶</a></h2>
+<p>holdings reports configurations
+Adding a placebo change</p>
+<dl class="function">
+<dt id="neat.config.holdings.blotter_concentration_grouping_doco">
+<code class="descclassname">neat.config.holdings.</code><code class="descname">blotter_concentration_grouping_doco</code><span class="sig-paren">(</span><em>grouper=None</em>, <em>widgettype=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.holdings.blotter_concentration_grouping_doco" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.config.legacy">
+<span id="neat-config-legacy"></span><h2>neat.config.legacy<a class="headerlink" href="#module-neat.config.legacy" title="Permalink to this headline">¶</a></h2>
+<p>legacy reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.performance">
+<span id="neat-config-performance"></span><h2>neat.config.performance<a class="headerlink" href="#module-neat.config.performance" title="Permalink to this headline">¶</a></h2>
+<p>performance reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.reports">
+<span id="neat-config-reports"></span><h2>neat.config.reports<a class="headerlink" href="#module-neat.config.reports" title="Permalink to this headline">¶</a></h2>
+<p>reports configurations</p>
+<dl class="function">
+<dt id="neat.config.reports.f">
+<code class="descclassname">neat.config.reports.</code><code class="descname">f</code><span class="sig-paren">(</span><em>r</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.reports.f" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.config.testing">
+<span id="neat-config-testing"></span><h2>neat.config.testing<a class="headerlink" href="#module-neat.config.testing" title="Permalink to this headline">¶</a></h2>
+<p>testing of reports configurations</p>
+</div>
+<div class="section" id="module-neat.config.transactions">
+<span id="neat-config-transactions"></span><h2>neat.config.transactions<a class="headerlink" href="#module-neat.config.transactions" title="Permalink to this headline">¶</a></h2>
+<p>transaction reports configurations</p>
+<dl class="function">
+<dt id="neat.config.transactions.cross_trades_doco">
+<code class="descclassname">neat.config.transactions.</code><code class="descname">cross_trades_doco</code><span class="sig-paren">(</span><em>cross=None</em>, <em>aggr=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.transactions.cross_trades_doco" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.config.transactions.histogram_transaction_grouping_doco">
+<code class="descclassname">neat.config.transactions.</code><code class="descname">histogram_transaction_grouping_doco</code><span class="sig-paren">(</span><em>grouper=None</em>, <em>datatype=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.transactions.histogram_transaction_grouping_doco" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.config.transactions.histogram_transaction_grouping_unique">
+<code class="descclassname">neat.config.transactions.</code><code class="descname">histogram_transaction_grouping_unique</code><span class="sig-paren">(</span><em>grouper=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.config.transactions.histogram_transaction_grouping_unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is tremendously crude, but this dict is a copy of the one used in the code in reports.transaction_groupings_hist()</p>
+</dd></dl>
+
+<span class="target" id="module-neat.config"></span></div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="neat.layouts.html" class="btn btn-neutral float-right" title="neat.layouts">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.6-293-g7df05a2-dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

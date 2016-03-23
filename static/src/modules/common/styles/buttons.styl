@@ -1,0 +1,122 @@
+@import colors
+
+.btn
+  font-weight 700 !important
+  border 0
+
+  &.primary
+
+    &,
+    &:focus
+      color white
+      background-color color-primary
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      background-color color-primary-darkest
+
+    &:hover
+      background-color color-primary-darker
+
+    &:focus
+      box-shadow 0 0 3px color-focus, 0 0 7px color-focus
+
+  &.primary-alt
+
+    &,
+    &:focus
+      color color-base
+      background-color color-primary-alt
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      color color-white
+      background-color color-primary-alt-darkest
+
+    &:hover
+      background-color color-primary-alt-dark
+
+    &:focus
+      box-shadow 0 0 3px color-focus, 0 0 7px color-focus
+
+  &.secondary
+
+    // This parent selector lets us avoid duplicating the following CSS rules.
+    // We need them twice to override Bootstrap's :focus styles.
+    &,
+    &:focus
+      color color-white
+      background-color color-secondary
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      background-color color-secondary-darkest
+
+    &:hover
+      background-color color-secondary-dark
+
+    &:focus
+      box-shadow 0 0 3px color-focus, 0 0 7px color-focus
+
+  &.secondary-alt
+
+    &,
+    &:focus
+      color color-white
+      background-color color-gray
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      background-color color-base
+
+    &:hover
+      background-color color-gray-dark
+
+    &:focus
+      box-shadow 0 0 3px color-focus, 0 0 7px color-focus
+
+  &.secondary-outline
+
+    &,
+    &:focus
+      color color-primary
+      background-color color-white
+      box-shadow inset 0 0 0 2px color-primary
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      color color-primary-darkest
+      box-shadow inset 0 0 0 2px color-primary-darkest
+
+    &:hover
+      color color-primary-darker
+      box-shadow inset 0 0 0 2px color-primary-darker
+
+    &:focus
+      box-shadow inset 0 0 0 2px color-primary-darker, 0 0 3px color-focus, 0 0 7px color-focus
+
+  &.secondary-alt-outline
+
+    &,
+    &:focus
+      color color-white
+      background transparent
+      box-shadow inset 0 0 0 2px color-white
+
+    &:active,
+    &:active:hover,
+    &:active:focus
+      color color-gray-lighter
+      box-shadow inset 0 0 0 2px color-gray-light
+
+    &:hover
+      color color-gray-lighter
+      box-shadow inset 0 0 0 2px color-gray-lighter
+
+    &:focus
+      box-shadow inset 0 0 0 2px color-gray-light, 0 0 3px color-focus, 0 0 7px color-focus

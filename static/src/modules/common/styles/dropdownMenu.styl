@@ -1,0 +1,89 @@
+@import colors
+@import layouts
+
+menubar-dropdown-width = 225px
+
+/**
+ * Menubar dropdown
+ */
+
+.dropdownMenu
+  line-height navbar-height
+  cursor pointer
+
+  .dropdownMenuTitle,
+  .dropdownMenuTopLevel
+    display block
+    color color-base
+    background-color color-white
+    padding 0 15px
+
+  &.collapsed
+    &:last-child > ul,
+    > ul
+      left -9999px
+      right 9999px
+      width 0
+
+    .dropdownMenuTitle,
+    .dropdownMenuTopLevel
+      color color-gray-lighter
+      background none
+
+  > ul
+    position absolute
+    display block
+    float left
+    left 0
+    min-width menubar-dropdown-width
+    padding 5px 0
+    margin 0
+    list-style none
+    text-align left
+    background-color color-white
+    border 1px solid color-gray-light
+    box-shadow 0 6px 12px rgba(0, 0, 0, 0.175)
+
+    & > li
+      padding 0 .5em
+      height 30px
+      line-height 30px
+
+      &:hover
+        background-color color-gray-lightest
+
+      .keyboardShortcut
+        float right
+        color color-gray
+
+      & > a
+        text-decoration none
+        &:focus
+          outline none
+
+  /* Last dropdown is right-justified */
+  &:last-child > ul
+    right 0
+    left inherit
+
+  /* Tooltip on hover */
+  .dropdownTooltip
+    position absolute
+    top 95%
+    left -1em
+    font-size 0.8em
+    line-height 1.5em
+    text-align right
+    padding .5em 1em
+    background-color color-gray-lightest
+    border 1px solid color-gray
+    color color-base
+
+    &:after
+      position absolute
+      top -.75em
+      right 0
+      content ''
+      border-style solid
+      border-width 0 5px 9px 5px
+      border-color transparent transparent color-gray-lightest transparent

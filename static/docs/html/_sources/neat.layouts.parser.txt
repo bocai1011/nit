@@ -1,0 +1,42 @@
+neat.layouts.parser
+===================
+
+.. toctree::
+   :maxdepth: 3
+
+neat.layouts.parser.core
+------------------------
+
+.. automodule:: neat.layouts.parser.core
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.layouts.parser.factory
+---------------------------
+
+.. automodule:: neat.layouts.parser.factory
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.layouts.parser.fields
+--------------------------
+
+.. automodule:: neat.layouts.parser.fields
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.layouts.parser.utils
+-------------------------
+
+.. automodule:: neat.layouts.parser.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+.. automodule:: neat.layouts.parser
+    :members:
+    :undoc-members:
+    :show-inheritance:

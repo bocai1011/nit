@@ -1,0 +1,41 @@
+#skipAnchor:focus
+  position absolute
+  z-index 2000
+  top 6px
+  left 8px
+  width auto
+  height auto
+  font-size 0.7em
+  line-height normal
+  text-align center
+  padding 2px 4px 4px 4px
+  outline none
+  border 1px solid #4D90FE
+  border-radius 2px
+  color #4D90FE
+  text-decoration none
+
+/**
+ * Need this for dropdown buttons to render button left-justified
+ */
+button.dropdown-toggle > span:first-child
+  float left !important
+
+.aboutPage.container
+  margin-top 130px
+
+.case-overview
+  width 80%
+  margin auto
+
+.case-frame
+  position absolute
+  top navbar-height
+  left 0
+  right 0
+  bottom 0
+  height 'calc(100% - %s)' % navbar-height
+
+.open-case-loading
+  margin-top 10%
+  font-size 3em

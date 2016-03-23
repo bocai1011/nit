@@ -1,0 +1,62 @@
+neat.refdata.bbg package
+========================
+
+Submodules
+----------
+
+neat.refdata.bbg.api module
+---------------------------
+
+.. automodule:: neat.refdata.bbg.api
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.refdata.bbg.bbg module
+---------------------------
+
+.. automodule:: neat.refdata.bbg.bbg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.refdata.bbg.ibbg module
+----------------------------
+
+.. automodule:: neat.refdata.bbg.ibbg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.refdata.bbg.interface module
+---------------------------------
+
+.. automodule:: neat.refdata.bbg.interface
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.refdata.bbg.sql module
+---------------------------
+
+.. automodule:: neat.refdata.bbg.sql
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+neat.refdata.bbg.util module
+----------------------------
+
+.. automodule:: neat.refdata.bbg.util
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: neat.refdata.bbg
+    :members:
+    :undoc-members:
+    :show-inheritance:

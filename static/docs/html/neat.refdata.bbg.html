@@ -1,0 +1,833 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>neat.refdata.bbg package &mdash; NEAT 3.0.6-293-g7df05a2-dirty documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="NEAT 3.0.6-293-g7df05a2-dirty documentation" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> NEAT</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="neat.html">neat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cache">neat.cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cases">neat.cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.db">neat.db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.kq">neat.kq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.pcl">neat.pcl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.query">neat.query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.rectify">neat.rectify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.staging">neat.staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#neat-web">neat.web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.wolf">neat.wolf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.config.html">neat.config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.commissions">neat.config.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.comparisons">neat.config.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.dashboard">neat.config.dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.database">neat.config.database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.deepdrilldowns">neat.config.deepdrilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.defaults">neat.config.defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.drilldowns">neat.config.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.holdings">neat.config.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.legacy">neat.config.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.performance">neat.config.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.reports">neat.config.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.testing">neat.config.testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.transactions">neat.config.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.layouts.html">neat.layouts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.infer.html">neat.layouts.infer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.parser.html">neat.layouts.parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.api">neat.layouts.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.columns">neat.layouts.columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.config">neat.layouts.config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.notebook.html">neat.notebook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.queries.html">neat.queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.XIFO">neat.queries.XIFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.commissions">neat.queries.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.core">neat.queries.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.holdings">neat.queries.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#neat-queries-legacy">neat.queries.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.qa">neat.queries.qa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.reports">neat.queries.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.test">neat.queries.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.util">neat.queries.util</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.refdata.html">neat.refdata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.refdata.html#module-neat.refdata.currencies">neat.refdata.currencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.reports.html">neat.reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.links">neat.reports.links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.manager">neat.reports.manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.reports">neat.reports.reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.summary.html">neat.summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.commissions">neat.summary.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.comparisons">neat.summary.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.drilldowns">neat.summary.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.holdings">neat.summary.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.legacy">neat.summary.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.performance">neat.summary.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.transactions">neat.summary.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.util.html">neat.util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.async">neat.util.async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.util">neat.util.util</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">NEAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>neat.refdata.bbg package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/neat.refdata.bbg.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="neat-refdata-bbg-package">
+<h1>neat.refdata.bbg package<a class="headerlink" href="#neat-refdata-bbg-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-neat.refdata.bbg.api">
+<span id="neat-refdata-bbg-api-module"></span><h2>neat.refdata.bbg.api module<a class="headerlink" href="#module-neat.refdata.bbg.api" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.refdata.bbg.api.build_bulk_rows">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">build_bulk_rows</code><span class="sig-paren">(</span><em>field_names</em>, <em>elems</em>, <em>exceptions</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.build_bulk_rows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.build_row">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">build_row</code><span class="sig-paren">(</span><em>field_names</em>, <em>elem</em>, <em>exceptions</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.build_row" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.capture_field_exceptions">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">capture_field_exceptions</code><span class="sig-paren">(</span><em>security</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.capture_field_exceptions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.data_fields">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">data_fields</code><span class="sig-paren">(</span><em>request_type</em>, <em>asset_class</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.data_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.datatype">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">datatype</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.datatype" title="Permalink to this definition">¶</a></dt>
+<dd><p>undocumented part of bbg api to determine datatypes of returned values</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.import_blpapi">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">import_blpapi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.import_blpapi" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the module level import</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.is_quantity">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">is_quantity</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.is_quantity" title="Permalink to this definition">¶</a></dt>
+<dd><p>undocumented part of bbg api to determine datatypes of returned values</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.open_session">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">open_session</code><span class="sig-paren">(</span><em>hostname</em>, <em>port</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.open_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.process_api_fields">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">process_api_fields</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.process_api_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>output is a dictionary-of-dictionaries, some leaves are arrays.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.process_message">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">process_message</code><span class="sig-paren">(</span><em>msg</em>, <em>field_names</em>, <em>output</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.process_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a dict of sequence number to tuple of values</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.process_security">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">process_security</code><span class="sig-paren">(</span><em>security</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.process_security" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.request_api_fields">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">request_api_fields</code><span class="sig-paren">(</span><em>session</em>, <em>request_type</em>, <em>asset_class</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.request_api_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.request_data">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">request_data</code><span class="sig-paren">(</span><em>session</em>, <em>request_type</em>, <em>asset_class</em>, <em>tickers</em>, <em>dates=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.request_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.api.retrieve_data">
+<code class="descclassname">neat.refdata.bbg.api.</code><code class="descname">retrieve_data</code><span class="sig-paren">(</span><em>session</em>, <em>request_type</em>, <em>asset_class</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.api.retrieve_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.refdata.bbg.bbg">
+<span id="neat-refdata-bbg-bbg-module"></span><h2>neat.refdata.bbg.bbg module<a class="headerlink" href="#module-neat.refdata.bbg.bbg" title="Permalink to this headline">¶</a></h2>
+<p>manage bbg IO interface</p>
+<dl class="class">
+<dt id="neat.refdata.bbg.bbg.BBG">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">BBG</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>hold bloomberg interactions with the parent</p>
+<dl class="attribute">
+<dt id="neat.refdata.bbg.bbg.BBG.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.dbcontext">
+<code class="descname">dbcontext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.dbcontext" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a db context manager to auto open/close the db</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.bbg.BBG.dbname">
+<code class="descname">dbname</code><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.dbname" title="Permalink to this definition">¶</a></dt>
+<dd><p>our db filename</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.get_dates">
+<code class="descname">get_dates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.get_dates" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a list of start, end dates for getting market data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.get_securities">
+<code class="descname">get_securities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.get_securities" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the securities to process</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.get_server_data">
+<code class="descname">get_server_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.get_server_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>read the servers from the preferences; return a dict of type -&gt; { host, port }</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.bbg.BBG.queue">
+<code class="descname">queue</code><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.refdata.bbg.bbg.BBG_database">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">BBG_database</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.refdata.bbg.bbg.BBG" title="neat.refdata.bbg.bbg.BBG"><code class="xref py py-class docutils literal"><span class="pre">neat.refdata.bbg.bbg.BBG</span></code></a>, <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>Create a new candidates local db</p>
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_database.create_db">
+<code class="descname">create_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_database.create_db" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>create the database</strong></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_database.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_database.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>create the candidates db</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.refdata.bbg.bbg.BBG_get">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">BBG_get</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.refdata.bbg.bbg.BBG" title="neat.refdata.bbg.bbg.BBG"><code class="xref py py-class docutils literal"><span class="pre">neat.refdata.bbg.bbg.BBG</span></code></a></p>
+<p>provide API for passing case data to get bloomberg data</p>
+<p>write the requested data to files in a supplied directory</p>
+<p>write the bloomberg retrieval program</p>
+<p>optionally (if the bbg is local), provide run services</p>
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_get.get_available">
+<code class="descname">get_available</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_get.get_available" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a dict of the available bbg connection interfaces</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_get.get_candidates">
+<code class="descname">get_candidates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_get.get_candidates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_get.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_get.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.refdata.bbg.bbg.BBG_set">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">BBG_set</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.refdata.bbg.bbg.BBG" title="neat.refdata.bbg.bbg.BBG"><code class="xref py py-class docutils literal"><span class="pre">neat.refdata.bbg.bbg.BBG</span></code></a>, <a class="reference internal" href="neat.util.html#neat.util.async.AsyncMixIn" title="neat.util.async.AsyncMixIn"><code class="xref py py-class docutils literal"><span class="pre">neat.util.async.AsyncMixIn</span></code></a></p>
+<p>API for retrieving bloomberg data from the SQLite database
+read in the previously requested data</p>
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.get_adj_factors">
+<code class="descname">get_adj_factors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.get_adj_factors" title="Permalink to this definition">¶</a></dt>
+<dd><p>read in the adjustment factors</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.get_exchange_rates">
+<code class="descname">get_exchange_rates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.get_exchange_rates" title="Permalink to this definition">¶</a></dt>
+<dd><p>read in the exchange rates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.get_price_history_data">
+<code class="descname">get_price_history_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.get_price_history_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>read in the price history data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.get_security_master_data">
+<code class="descname">get_security_master_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.get_security_master_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>read in the security master data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the process asyn</p>
+<p>should return immeditely</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.retrieve_data">
+<code class="descname">retrieve_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.retrieve_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>go to bbg and get the data</p>
+<p>queue responses, including exceptions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.retrieve_data_offline">
+<code class="descname">retrieve_data_offline</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.retrieve_data_offline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.retrieve_data_server">
+<code class="descname">retrieve_data_server</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.retrieve_data_server" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve data from a bbg server, sapi or dapi</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.run_retrieve_and_read">
+<code class="descname">run_retrieve_and_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.run_retrieve_and_read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.update_and_save_table">
+<code class="descname">update_and_save_table</code><span class="sig-paren">(</span><em>t</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.update_and_save_table" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>t</strong> : string table name</p>
+<p><strong>df</strong> : the frame to update</p>
+<p class="last"><strong>as a side-effect this adds meta data to the frame</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.bbg.BBG_set.write_kdb">
+<code class="descname">write_kdb</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.BBG_set.write_kdb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read back the bbg data from the created
+SQLite database and write to kdb.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.bbg.apply_ddl">
+<code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">apply_ddl</code><span class="sig-paren">(</span><em>db</em>, <em>name</em>, <em>sql</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.apply_ddl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.bbg.get_bbg_server_connection">
+<code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">get_bbg_server_connection</code><span class="sig-paren">(</span><em>state</em>, <em>kind</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.get_bbg_server_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>give a python state object, return a dict of hostname, port</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>state</strong> : a dict of the state</p>
+<p><strong>kind</strong> : sapi/dapi</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">dict of hostname, port</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.bbg.make_db">
+<code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">make_db</code><span class="sig-paren">(</span><em>dbname</em>, <em>dirname</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.make_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a new database, remove the existing if needed</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dbname: full pathname to database file</strong></p>
+<p><strong>dirname full pathname to directory</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the db connection object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.bbg.read_ddl">
+<code class="descclassname">neat.refdata.bbg.bbg.</code><code class="descname">read_ddl</code><span class="sig-paren">(</span><em>dirname</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.bbg.read_ddl" title="Permalink to this definition">¶</a></dt>
+<dd><p>read <a href="#id1"><span class="problematic" id="id2">*</span></a>.sql files to generate SQLite database objects, one file per object.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.refdata.bbg.ibbg">
+<span id="neat-refdata-bbg-ibbg-module"></span><h2>neat.refdata.bbg.ibbg module<a class="headerlink" href="#module-neat.refdata.bbg.ibbg" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.refdata.bbg.ibbg.main">
+<code class="descclassname">neat.refdata.bbg.ibbg.</code><code class="descname">main</code><span class="sig-paren">(</span><em>start_date</em>, <em>end_date</em>, <em>names</em>, <em>host</em>, <em>port</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.ibbg.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.ibbg.print_adjustments">
+<code class="descclassname">neat.refdata.bbg.ibbg.</code><code class="descname">print_adjustments</code><span class="sig-paren">(</span><em>names</em>, <em>responses</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.ibbg.print_adjustments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.ibbg.print_fields">
+<code class="descclassname">neat.refdata.bbg.ibbg.</code><code class="descname">print_fields</code><span class="sig-paren">(</span><em>fields</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.ibbg.print_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.ibbg.print_history">
+<code class="descclassname">neat.refdata.bbg.ibbg.</code><code class="descname">print_history</code><span class="sig-paren">(</span><em>names</em>, <em>responses</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.ibbg.print_history" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.ibbg.print_reference">
+<code class="descclassname">neat.refdata.bbg.ibbg.</code><code class="descname">print_reference</code><span class="sig-paren">(</span><em>names</em>, <em>responses</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.ibbg.print_reference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.refdata.bbg.interface">
+<span id="neat-refdata-bbg-interface-module"></span><h2>neat.refdata.bbg.interface module<a class="headerlink" href="#module-neat.refdata.bbg.interface" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="neat.refdata.bbg.interface.BBGInterface">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.interface.</code><code class="descname">BBGInterface</code><span class="sig-paren">(</span><em>case</em>, <em>dbname</em>, <em>start_date</em>, <em>end_date</em>, <em>hostname='localhost'</em>, <em>port=8194</em>, <em>timeout=3000</em>, <em>waiter=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.ensure_is_started">
+<code class="descname">ensure_is_started</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.ensure_is_started" title="Permalink to this definition">¶</a></dt>
+<dd><p>ensure that we are started, or raise a connection error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.interface.BBGInterface.is_started">
+<code class="descname">is_started</code><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.is_started" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.interface.BBGInterface.queue">
+<code class="descname">queue</code><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.retrieve_adj_factor_data">
+<code class="descname">retrieve_adj_factor_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.retrieve_adj_factor_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.retrieve_exch_rate_data">
+<code class="descname">retrieve_exch_rate_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.retrieve_exch_rate_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.retrieve_historical_data">
+<code class="descname">retrieve_historical_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.retrieve_historical_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.retrieve_ref_data">
+<code class="descname">retrieve_ref_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.retrieve_ref_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.start">
+<code class="descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>start a Bloomberg session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>stop a Bloomberg session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.interface.BBGInterface.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.BBGInterface.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.interface.ensure_is_available">
+<code class="descclassname">neat.refdata.bbg.interface.</code><code class="descname">ensure_is_available</code><span class="sig-paren">(</span><em>hostname</em>, <em>port</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.ensure_is_available" title="Permalink to this definition">¶</a></dt>
+<dd><p>see if the server is listening at all</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>hostname: string, hostname or ip address</strong></p>
+<p><strong>port: port number</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">boolean for the server availability</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>ValueError with an unavailable msg</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.refdata.bbg.interface.is_available">
+<code class="descclassname">neat.refdata.bbg.interface.</code><code class="descname">is_available</code><span class="sig-paren">(</span><em>hostname</em>, <em>port</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.interface.is_available" title="Permalink to this definition">¶</a></dt>
+<dd><p>return True if a server is available at the specified hostname/port</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>hostname: string, hostname or ip address</strong></p>
+<p><strong>port: port number</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean for the server availability</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.refdata.bbg.sql">
+<span id="neat-refdata-bbg-sql-module"></span><h2>neat.refdata.bbg.sql module<a class="headerlink" href="#module-neat.refdata.bbg.sql" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="neat.refdata.bbg.sql.BBGSql">
+<em class="property">class </em><code class="descclassname">neat.refdata.bbg.sql.</code><code class="descname">BBGSql</code><span class="sig-paren">(</span><em>dbname</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>class to create/format our database queries</p>
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.adj_factor_insert">
+<code class="descname">adj_factor_insert</code><em class="property"> = '\n    insert into adj_factor\n    (bbg_ticker, date, factor, operator, flag)\n    values (?, ?, ?, ?, ?) '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.adj_factor_insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.adj_factor_read">
+<code class="descname">adj_factor_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.adj_factor_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>return list of tuples</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.adj_factor_write">
+<code class="descname">adj_factor_write</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.adj_factor_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.candidates_read">
+<code class="descname">candidates_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.candidates_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>return list of tuples</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.candidates_select">
+<code class="descname">candidates_select</code><em class="property"> = '\n    select bbg_query, symbol, symbol_type, asset_class, currency\n    from vcandidates order by symbol_type, symbol\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.candidates_select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.commit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.currencies_read">
+<code class="descname">currencies_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.currencies_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>return list of tuples</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.currencies_select">
+<code class="descname">currencies_select</code><em class="property"> = '\n    select currency, bbg_query\n    from vcandidate_currencies\n    order by currency\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.currencies_select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.currency_exchanges_read">
+<code class="descname">currency_exchanges_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.currency_exchanges_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>return list of tuples</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.currency_exchanges_select">
+<code class="descname">currency_exchanges_select</code><em class="property"> = 'select * from vcurrency_exchanges'</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.currency_exchanges_select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.delete_from_tables">
+<code class="descname">delete_from_tables</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.delete_from_tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.exch_rate_insert">
+<code class="descname">exch_rate_insert</code><em class="property"> = '\n    insert into exch_rate\n    (currency, date, rate ) values (?, ?, ?)\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.exch_rate_insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.exch_rate_write">
+<code class="descname">exch_rate_write</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.exch_rate_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.exch_usd_insert">
+<code class="descname">exch_usd_insert</code><em class="property"> = &quot;\n    insert into exch_rate\n    (currency, date, rate )\n    select distinct 'USD', hist_date, 1.0 from sec_price\n    &quot;</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.exch_usd_insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.exch_usd_write">
+<code class="descname">exch_usd_write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.exch_usd_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.factor_candidates_select">
+<code class="descname">factor_candidates_select</code><em class="property"> = '\n    select distinct bbg_ticker\n    from security order by bbg_ticker\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.factor_candidates_select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.sec_price_insert">
+<code class="descname">sec_price_insert</code><em class="property"> = '\n    insert into sec_price\n    (sec_id, hist_date, close, low, high, trade_volume, equity_float )\n    values (?, ?, ?, ?, ?, ?, ?)\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.sec_price_insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.sec_price_write">
+<code class="descname">sec_price_write</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.sec_price_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.securities_insert">
+<code class="descname">securities_insert</code><em class="property"> = '\n    insert into security\n    (sec_id, bbg_query, symbol, symbol_type, orig_sec_type, orig_currency,\n    symbol_description, cusip, isin, sedol, bbg_ticker,\n    currency, sec_type, industry)\n    values\n    (?, ?, ?, ?, ?, ?,\n    ?, ?, ?, ?, ?,\n    ?, ?, ?)\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.securities_insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.securities_read">
+<code class="descname">securities_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.securities_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>return list of tuples</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.refdata.bbg.sql.BBGSql.securities_select">
+<code class="descname">securities_select</code><em class="property"> = '\n    select sec_id, bbg_ticker\n    from vsecurity order by bbg_ticker\n    '</em><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.securities_select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.refdata.bbg.sql.BBGSql.securities_write">
+<code class="descname">securities_write</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.refdata.bbg.sql.BBGSql.securities_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="neat-refdata-bbg-util-module">
+<h2>neat.refdata.bbg.util module<a class="headerlink" href="#neat-refdata-bbg-util-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-neat.refdata.bbg">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-neat.refdata.bbg" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.6-293-g7df05a2-dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

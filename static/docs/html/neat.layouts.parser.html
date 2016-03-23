@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>neat.layouts.parser &mdash; NEAT 3.0.6-293-g7df05a2-dirty documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="NEAT 3.0.6-293-g7df05a2-dirty documentation" href="index.html"/>
+        <link rel="up" title="neat.layouts" href="neat.layouts.html"/>
+        <link rel="next" title="neat.notebook" href="neat.notebook.html"/>
+        <link rel="prev" title="neat.layouts.infer" href="neat.layouts.infer.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> NEAT</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="neat.html">neat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cache">neat.cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cases">neat.cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.db">neat.db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.kq">neat.kq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.pcl">neat.pcl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.query">neat.query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.rectify">neat.rectify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.staging">neat.staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#neat-web">neat.web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.wolf">neat.wolf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.config.html">neat.config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.commissions">neat.config.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.comparisons">neat.config.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.dashboard">neat.config.dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.database">neat.config.database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.deepdrilldowns">neat.config.deepdrilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.defaults">neat.config.defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.drilldowns">neat.config.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.holdings">neat.config.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.legacy">neat.config.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.performance">neat.config.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.reports">neat.config.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.testing">neat.config.testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.transactions">neat.config.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="neat.layouts.html">neat.layouts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.infer.html">neat.layouts.infer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">neat.layouts.parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.api">neat.layouts.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.columns">neat.layouts.columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.config">neat.layouts.config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.notebook.html">neat.notebook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.queries.html">neat.queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.XIFO">neat.queries.XIFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.commissions">neat.queries.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.core">neat.queries.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.holdings">neat.queries.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#neat-queries-legacy">neat.queries.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.qa">neat.queries.qa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.reports">neat.queries.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.test">neat.queries.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.util">neat.queries.util</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.refdata.html">neat.refdata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.refdata.html#module-neat.refdata.currencies">neat.refdata.currencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.reports.html">neat.reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.links">neat.reports.links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.manager">neat.reports.manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.reports">neat.reports.reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.summary.html">neat.summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.commissions">neat.summary.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.comparisons">neat.summary.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.drilldowns">neat.summary.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.holdings">neat.summary.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.legacy">neat.summary.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.performance">neat.summary.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.transactions">neat.summary.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.util.html">neat.util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.async">neat.util.async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.util">neat.util.util</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">NEAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="neat.layouts.html">neat.layouts</a> &raquo;</li>
+      
+    <li>neat.layouts.parser</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/neat.layouts.parser.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="neat-layouts-parser">
+<h1>neat.layouts.parser<a class="headerlink" href="#neat-layouts-parser" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="module-neat.layouts.parser.core">
+<span id="neat-layouts-parser-core"></span><h2>neat.layouts.parser.core<a class="headerlink" href="#module-neat.layouts.parser.core" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.layouts.parser.core.fast_datetime">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">fast_datetime</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.fast_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faster datetime parsing, returns nanoseconds since epoch UTC</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_any">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_any</code><span class="sig-paren">(</span><em>field</em>, <em>no_nan=False</em>, <em>no_inf=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_any" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to float or return NaN.
+If <cite>no_inf</cite> is True, disallow numbers that are parsed to infinity.</p>
+<p>Supports the following formats:
+23 == 23.0
+23.0 == 23.0
+-23 == -23.0 == (23)
+23% == 0.23
+(23%) == -0.23</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_eq_zero">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_eq_zero</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_eq_zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to == 0 or np.NaN</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_gt_zero">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_gt_zero</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_gt_zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to &gt; 0 or np.NaN</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_gte_zero">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_gte_zero</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_gte_zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to &gt;= 0 or np.NaN</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_lt_zero">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_lt_zero</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_lt_zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to &lt; 0 or np.NaN</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.num_lte_zero">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">num_lte_zero</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.num_lte_zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either parse string to &lt;= 0 or np.NaN</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.str_any">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">str_any</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.str_any" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always return valid parse on string, even if blank</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.str_non_null">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">str_non_null</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.str_non_null" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return valid parse on string, if not blank</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.unambiguous_datetime_stamp">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">unambiguous_datetime_stamp</code><span class="sig-paren">(</span><em>dtstamp</em>, <em>reverse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.unambiguous_datetime_stamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.valid_date">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">valid_date</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.valid_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempt to parse to supported date</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.valid_datetime">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">valid_datetime</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.valid_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempt to parse to supported datetime</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.core.valid_time">
+<code class="descclassname">neat.layouts.parser.core.</code><code class="descname">valid_time</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.core.valid_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempt to parse to supported time</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.layouts.parser.factory">
+<span id="neat-layouts-parser-factory"></span><h2>neat.layouts.parser.factory<a class="headerlink" href="#module-neat.layouts.parser.factory" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.layouts.parser.factory.concat_date_with_time">
+<code class="descclassname">neat.layouts.parser.factory.</code><code class="descname">concat_date_with_time</code><span class="sig-paren">(</span><em>date_col</em>, <em>time_col</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.factory.concat_date_with_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a function that combines a date and time column together, regardless of if either column is a date time
+This assumes that all date column members are non-null (not NaT)
+:param date_col: name of date column
+:param time_col: name of time column</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.factory.datetime">
+<code class="descclassname">neat.layouts.parser.factory.</code><code class="descname">datetime</code><span class="sig-paren">(</span><em>format</em>, <em>dayfirst</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.factory.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a format, return a parser built on top of pandas.to_datetime.
+:param dayfirst:
+:param format: str (strftime compliant)
+:return: pandas.tslib.Timestamp (pandas.NaT if fails)</p>
+<dl class="docutils">
+<dt>Default behavior:</dt>
+<dd>infer_datetime_format = True
+coerce = True
+dayfirst = False
+format = None</dd>
+</dl>
+<p>If format is supplied, fast path is enabled.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.factory.not_null">
+<code class="descclassname">neat.layouts.parser.factory.</code><code class="descname">not_null</code><span class="sig-paren">(</span><em>col_name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.factory.not_null" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a function that will test a specified column in a dataframe against being null. Returns non_null
+:param col_name:
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.factory.numeric_validator">
+<code class="descclassname">neat.layouts.parser.factory.</code><code class="descname">numeric_validator</code><span class="sig-paren">(</span><em>col_name</em>, <em>num</em>, <em>operator</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.factory.numeric_validator" title="Permalink to this definition">¶</a></dt>
+<dd><p>given a column name, some number and an operator against it, return a function for validating a dataframe
+:param col_name:
+:param operator:
+:param num:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.factory.str_length">
+<code class="descclassname">neat.layouts.parser.factory.</code><code class="descname">str_length</code><span class="sig-paren">(</span><em>col_name</em>, <em>min_len=0</em>, <em>max_len=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.factory.str_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a column_name and min/max values, construct an test resulting in a boolean masking array,
+use min_len = 0 for tests regarding only max length.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.layouts.parser.fields">
+<span id="neat-layouts-parser-fields"></span><h2>neat.layouts.parser.fields<a class="headerlink" href="#module-neat.layouts.parser.fields" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.layouts.parser.fields.cusip">
+<code class="descclassname">neat.layouts.parser.fields.</code><code class="descname">cusip</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.fields.cusip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if cusip is valid (string of length 8 or 9 only), returns string of length 8 or None</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.fields.isin">
+<code class="descclassname">neat.layouts.parser.fields.</code><code class="descname">isin</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.fields.isin" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if ISIN is valid</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.layouts.parser.fields.sedol">
+<code class="descclassname">neat.layouts.parser.fields.</code><code class="descname">sedol</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.fields.sedol" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if sedol is valid, length [6,7]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.layouts.parser.utils">
+<span id="neat-layouts-parser-utils"></span><h2>neat.layouts.parser.utils<a class="headerlink" href="#module-neat.layouts.parser.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="neat.layouts.parser.utils.infer_type">
+<code class="descclassname">neat.layouts.parser.utils.</code><code class="descname">infer_type</code><span class="sig-paren">(</span><em>sample_list</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.layouts.parser.utils.infer_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a list of sample strings, infer the set of possible types
+:returns types: set of possible types</p>
+</dd></dl>
+
+<span class="target" id="module-neat.layouts.parser"></span></div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="neat.notebook.html" class="btn btn-neutral float-right" title="neat.notebook">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="neat.layouts.infer.html" class="btn btn-neutral" title="neat.layouts.infer"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.6-293-g7df05a2-dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

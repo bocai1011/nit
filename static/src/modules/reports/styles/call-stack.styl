@@ -1,0 +1,136 @@
+// Styles for a <Chart>'s call stack.
+.call-stack
+  position fixed
+  top navbar-height
+  right 0
+  z-index 9999
+  max-width 25em
+  max-height 'calc(100% - %s)' % navbar-height
+  overflow auto
+  padding 1em
+  font-family 'Consolas', monospace !important
+  color color-white
+  background-color color-gray
+
+  header
+    margin-bottom 1em
+    white-space nowrap
+
+    h1
+      display inline-block
+      margin 0
+      margin-right 1em
+      font-family inherit
+      font-size 1em
+
+    // Element to close the call stack.
+    i
+      margin-top 3px
+      float right
+      cursor pointer
+
+  // Two utility functions for changing the background colors of calls in the
+  // call stack. Used to highlight relationships.
+  .hilite
+    background-color color-secondary-light !important
+
+  .hiliter
+    background-color color-secondary !important
+
+  // Styles for each call in the call-stack.
+  .call
+    display block
+    background-color color-gray-light
+
+    &:not(:last-child)
+      margin-bottom .5em
+
+    // The container that stores the name of the call (also has a caret icon
+    // to symbolize that the call can be expanded.)
+    .func
+      padding .5em
+      cursor pointer
+
+      // Clicks on the .func container should always have that container as the
+      // event target. None of its children should register pointer-events.
+      > *
+        pointer-events none
+
+      // The caret icon on the .func container.
+      i
+        margin-right .75em
+        transition transform .3s
+
+    // The container that expands from a call, showing its docs and args.
+    .detail
+      max-height 0
+      overflow hidden
+      transition max-height .3s ease-out
+
+    // The container storing a call's docs (inside the .detail container.)
+    .doc
+      padding .5em
+      color color-base
+      background-color color-gray-lightest
+
+    // The container storing a call's args (inside the .detail container.)
+    .args
+      padding .5em
+      background-color color-primary-darkest
+
+    // Each arg---a div that wraps two spans.
+    .arg
+
+      &:not(:last-child)
+        margin-bottom .25em
+
+      &:first-child
+        margin-top .5em
+
+      > *
+        padding .1em .3em
+
+      // Span storing the name of a call's argument.
+      .arg-name
+        display inline-block
+        vertical-align top
+        background-color color-primary-darker
+
+      // Span storing the value of a call's argument.
+      .arg-val
+        display inline-block
+        vertical-align top
+        background-color color-primary
+
+      // An .arg-val gets this class if it's not a primitive JS Object. The
+      // pointer signifies that it can be clicked (for more information).
+      .arg-object
+        cursor pointer
+
+      // Helper class to allow highlighting the size of a call's arguments,
+      // e.g. Array [5] -- 5 would be highlighted in gold-light.
+      .arg-count
+        color color-gold-light
+
+  .call.expanded
+
+    .func i
+      transform rotate(90deg)
+
+    .detail
+      max-height 600px
+      transition max-height .3s ease-in
+
+.call-stack-enter
+  transform translateX(100%)
+  transition transform .3s
+
+.call-stack-enter.call-stack-enter-active
+  transform translateX(0)
+
+.call-stack-leave
+  transform translateX(0)
+  transition transform .3s
+
+.call-stack-leave.call-stack-leave-active
+  transform translateX(100%)

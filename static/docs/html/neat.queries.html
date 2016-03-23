@@ -1,0 +1,2412 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>neat.queries &mdash; NEAT 3.0.6-293-g7df05a2-dirty documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="NEAT 3.0.6-293-g7df05a2-dirty documentation" href="index.html"/>
+        <link rel="next" title="neat.refdata" href="neat.refdata.html"/>
+        <link rel="prev" title="neat.notebook" href="neat.notebook.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> NEAT</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="neat.html">neat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cache">neat.cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.cases">neat.cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.db">neat.db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.kq">neat.kq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.pcl">neat.pcl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.query">neat.query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.rectify">neat.rectify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.staging">neat.staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#neat-web">neat.web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.html#module-neat.wolf">neat.wolf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.config.html">neat.config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.commissions">neat.config.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.comparisons">neat.config.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.dashboard">neat.config.dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.database">neat.config.database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.deepdrilldowns">neat.config.deepdrilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.defaults">neat.config.defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.drilldowns">neat.config.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.holdings">neat.config.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.legacy">neat.config.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.performance">neat.config.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.reports">neat.config.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.testing">neat.config.testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.transactions">neat.config.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.layouts.html">neat.layouts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.infer.html">neat.layouts.infer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.parser.html">neat.layouts.parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.api">neat.layouts.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.columns">neat.layouts.columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.config">neat.layouts.config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.notebook.html">neat.notebook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">neat.queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.XIFO">neat.queries.XIFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.commissions">neat.queries.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.core">neat.queries.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.holdings">neat.queries.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#neat-queries-legacy">neat.queries.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.qa">neat.queries.qa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.reports">neat.queries.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.test">neat.queries.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.queries.util">neat.queries.util</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.refdata.html">neat.refdata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.refdata.html#module-neat.refdata.currencies">neat.refdata.currencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.reports.html">neat.reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.links">neat.reports.links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.manager">neat.reports.manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.reports">neat.reports.reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.summary.html">neat.summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.commissions">neat.summary.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.comparisons">neat.summary.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.drilldowns">neat.summary.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.holdings">neat.summary.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.legacy">neat.summary.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.performance">neat.summary.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.transactions">neat.summary.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.util.html">neat.util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.async">neat.util.async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.util">neat.util.util</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">NEAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>neat.queries</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/neat.queries.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="neat-queries">
+<h1>neat.queries<a class="headerlink" href="#neat-queries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-neat.queries.XIFO">
+<span id="neat-queries-xifo"></span><h2>neat.queries.XIFO<a class="headerlink" href="#module-neat.queries.XIFO" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="neat.queries.XIFO.Positions">
+<em class="property">class </em><code class="descclassname">neat.queries.XIFO.</code><code class="descname">Positions</code><span class="sig-paren">(</span><em>pair_type</em>, <em>c</em>, <em>long</em>, <em>a</em>, <em>s</em>, <em>t_start</em>, <em>p_start</em>, <em>t_end</em>, <em>p_end</em>, <em>net=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="neat.queries.XIFO.Positions.add_to_table">
+<code class="descname">add_to_table</code><span class="sig-paren">(</span><em>head</em>, <em>tail</em>, <em>strong=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.add_to_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.XIFO.Positions.close_all">
+<code class="descname">close_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.close_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.queries.XIFO.Positions.command">
+<code class="descname">command</code><em class="property"> = '`positions_%s upsert\n                 ([]start_id: enlist (%d);\n                 end_id: enlist (%d);\n                 qty: enlist (%s);\n                 price: enlist (%s);\n                 del_price: enlist (%s);\n                 hold_time: enlist (%s);\n                 real: enlist (%d);\n                 long: enlist (%d);\n                 strong: enlist (%d);\n                 sec_id: enlist (%d);\n                 account_id: enlist (%d))'</em><a class="headerlink" href="#neat.queries.XIFO.Positions.command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.XIFO.Positions.enter">
+<code class="descname">enter</code><span class="sig-paren">(</span><em>trade</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.enter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.XIFO.Positions.exit">
+<code class="descname">exit</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.exit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.XIFO.Positions.hold_time">
+<code class="descname">hold_time</code><span class="sig-paren">(</span><em>t1</em>, <em>t2</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.hold_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.XIFO.Positions.real">
+<code class="descname">real</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.Positions.real" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.XIFO.build_pairs">
+<code class="descclassname">neat.queries.XIFO.</code><code class="descname">build_pairs</code><span class="sig-paren">(</span><em>case</em>, <em>pair_type='FIFO'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.build_pairs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.XIFO.trade_map">
+<code class="descclassname">neat.queries.XIFO.</code><code class="descname">trade_map</code><span class="sig-paren">(</span><em>trade</em>, <em>columns</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.XIFO.trade_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.commissions">
+<span id="neat-queries-commissions"></span><h2>neat.queries.commissions<a class="headerlink" href="#module-neat.queries.commissions" title="Permalink to this headline">¶</a></h2>
+<p>commissions queries</p>
+<dl class="function">
+<dt id="neat.queries.commissions.churning_compute_data">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">churning_compute_data</code><span class="sig-paren">(</span><em>case</em>, <em>cf_selector='Commissions Only'</em>, <em>local=False</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.churning_compute_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the base churning data, suitable for scatter/table</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.churning_scatter">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">churning_scatter</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.churning_scatter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.churning_table">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">churning_table</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.churning_table" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commission_groupings_bar">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commission_groupings_bar</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field='pctnotional'</em>, <em>cf_selector='Commissions Plus Fees'</em>, <em>how='mean'</em>, <em>local=False</em>, <em>ascending=False</em>, <em>cnt=10</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commission_groupings_bar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper:  a standard grouper</strong></p>
+<p><strong>field</strong> : the sense of the commission/fee value desired:  straight cost, pct of notional, per share cost</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>how:  the type of aggregation to use on each group</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+<p><strong>ascending:  the sort order for pd.DataFrame.sort()</strong></p>
+<p><strong>cnt:  the number of rows to return</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a DataFrame by grouper with grouped standard data, sorted;  return only the top cnt bars worth of data.</p>
+<p class="last">NOTE:  trivial with new report style.  This goes away.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commission_groupings_hist">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commission_groupings_hist</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field='cost'</em>, <em>cf_selector='Commissions Only'</em>, <em>how='mean'</em>, <em>local=False</em>, <em>log=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commission_groupings_hist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper:  a standard grouper</strong></p>
+<p><strong>field</strong> : the sense of the commission/fee value desired:  straight cost, pct of notional, per share cost</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>how:  the type of aggregation to use on each group</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+<p><strong>log</strong> : boolean, default True</p>
+<blockquote>
+<div><p>indicates whether or not the horizontal axis of the histogram should be binned using log(x)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commission_groupings_table">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commission_groupings_table</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>cf_selector='Commissions Only'</em>, <em>how='mean'</em>, <em>local=False</em>, <em>map=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commission_groupings_table" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper:  a standard grouper</strong></p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>how:  the type of aggregation to use on each group</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+<p><strong>map:  indicates whether to map grouper inplace</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commission_hist">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commission_hist</code><span class="sig-paren">(</span><em>case</em>, <em>field='cost'</em>, <em>cf_selector='Commissions Only'</em>, <em>local=False</em>, <em>log=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commission_hist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>field</strong> : the sense of the commission/fee value desired:  straight cost, pct of notional, per share cost</p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+<p><strong>log</strong> : boolean, default True</p>
+<blockquote>
+<div><p>indicates whether or not the horizontal axis of the histogram should be binned using log(x)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commission_summary">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commission_summary</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commission_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a data frame of summary statistics with a grouper</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.commissions_pie">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">commissions_pie</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>sub_grouper=None</em>, <em>cf_selector='Commissions Only'</em>, <em>how='sum'</em>, <em>local=False</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.commissions_pie" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>A transactions grouping by the sub_grouper or grouper.  Exactly one of grouper or subgrouper must be non-None.</div></blockquote>
+<p>The field of interest is compiled on the fly from &#8216;how&#8217;, cf_selector, and local.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>sub_grouper: the sub grouper of this data, limited to [&#8216;sec_type&#8217;,&#8217;crncy&#8217;]</strong></p>
+<p><strong>grouper: any of the standard groupers (eg &#8216;account&#8217;, &#8216;broker&#8217;, etc.)</strong></p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+<p><strong>local:  indicates report in local currency or usd</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.get_commission_data_basic">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">get_commission_data_basic</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>cf_selector='Commissions Only'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.get_commission_data_basic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>cf_selector:  chose between commissions only, fees only, or commissions + fees</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a DataFrame with three standard columns added:  &#8216;cost&#8217;, &#8216;pershare&#8217;, &#8216;pctnotional&#8217;;  these are generated from the single column selected</p>
+<p class="last">by cf_selector, and that column divided by qty, and that column divided by notional.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.get_commission_table">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">get_commission_table</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.get_commission_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the raw data for commissions with all groupers mapped.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> : cached data object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A DataFrame</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.commissions.get_standard_commission_groupings">
+<code class="descclassname">neat.queries.commissions.</code><code class="descname">get_standard_commission_groupings</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field=None</em>, <em>map=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.commissions.get_standard_commission_groupings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>field</strong> : optional, return only the grouper + field in the results</p>
+<p><strong>map</strong> : boolean, apply the number -&gt; name mappings</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.core">
+<span id="neat-queries-core"></span><h2>neat.queries.core<a class="headerlink" href="#module-neat.queries.core" title="Permalink to this headline">¶</a></h2>
+<p>core queries</p>
+<dl class="function">
+<dt id="neat.queries.core.apply_mappings">
+<code class="descclassname">neat.queries.core.</code><code class="descname">apply_mappings</code><span class="sig-paren">(</span><em>case</em>, <em>data</em>, <em>kinds</em>, <em>columns=None</em>, <em>broadcast=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.apply_mappings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map all kinds to columns
+The column names must be grouper type (ie, something that get_mappings() will locate, such as &#8216;account&#8217;, &#8216;broker&#8217;, &#8216;sec&#8217;, &#8216;firm&#8217;, &#8216;rrep&#8217;, etc.)
+Return a new object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>data</strong> : a DataFrame / Data</p>
+<p><strong>kinds</strong> : a string or list of strings of the type of mapping (account/broker/sec)</p>
+<p><strong>columns</strong> : optional,</p>
+<blockquote>
+<div><p>if provided, then use these as the column names
+otherwise column names will be the kind</p>
+</div></blockquote>
+<p><strong>broadcast</strong> : boolean, provide a broadcast mapping</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.binary_filter">
+<code class="descclassname">neat.queries.core.</code><code class="descname">binary_filter</code><span class="sig-paren">(</span><em>data</em>, <em>fields</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.binary_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.binary_filter2">
+<code class="descclassname">neat.queries.core.</code><code class="descname">binary_filter2</code><span class="sig-paren">(</span><em>data</em>, <em>fields</em>, <em>arg</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.binary_filter2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.filter">
+<code class="descclassname">neat.queries.core.</code><code class="descname">filter</code><span class="sig-paren">(</span><em>fields</em>, <em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>given fields and a function f, do the selection</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.filter_by">
+<code class="descclassname">neat.queries.core.</code><code class="descname">filter_by</code><span class="sig-paren">(</span><em>case</em>, <em>t</em>, <em>start=None</em>, <em>end=None</em>, <em>account=None</em>, <em>broker=None</em>, <em>sec=None</em>, <em>side=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.filter_by" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>t</strong> : a blaze Data object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Data object representing the Selection on the table</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_account_holding">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_account_holding</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_account_holding" title="Permalink to this definition">¶</a></dt>
+<dd><p>return transactions with with an optional start/end date</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Data object representing the Selection</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_churning_composite">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_churning_composite</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_churning_composite" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide data needed for churning reports</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>grouper</strong> : a string grouper</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A DataFrame</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_commissions_underlying">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_commissions_underlying</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_commissions_underlying" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the raw data set underlying all commission and fee reports - basically, just add columns for USD-based values to what&#8217;s in the transaction table.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data</strong> : hopefully None.  If data is populated replace it.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A DataFrame</p>
+<p class="last">FIXEME:  want to integrate this as a native blaze object, caching, filters on the transaction table, etc.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_correlated_acct_behavior">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_correlated_acct_behavior</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>account1=None</em>, <em>account2=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_correlated_acct_behavior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate correlated trading behavior</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>account1</strong> : code, optional, defaults None</p>
+<p><strong>account2</strong> : code, optional, defaults None</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_cross_trades">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_cross_trades</code><span class="sig-paren">(</span><em>case</em>, <em>cross='Default'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_cross_trades" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the cross-trades transactions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cross</strong> : the type of cross trades to create</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A DataFrame</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_daily_aggr_trans">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_daily_aggr_trans</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_daily_aggr_trans" title="Permalink to this definition">¶</a></dt>
+<dd><p>return transactions with with an optional start/end date</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Data object representing the Selection</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_data">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_data</code><span class="sig-paren">(</span><em>case</em>, <em>table</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the table contents</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>table</strong> : a table name</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>get_data(case, &#8216;exch_rate&#8217;)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_first_date">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_first_date</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_first_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the first date of our set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>case</strong> : the case</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_groupby_and_reduce">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_groupby_and_reduce</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field</em>, <em>how='sum'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_groupby_and_reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>groupby the grouper, and provide a reduction of the field with the func</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : a list of groupby fields</p>
+<p><strong>field</strong> : a string or list of fields to summarize</p>
+<p><strong>how</strong> : string or list of a summary function</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A Dataframe</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_grouped">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_grouped</code><span class="sig-paren">(</span><em>case</em>, <em>columns</em>, <em>grouper</em>, <em>field</em>, <em>data=None</em>, <em>view=None</em>, <em>page=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_grouped" title="Permalink to this definition">¶</a></dt>
+<dd><p>use a grouped expression to compute metrics / data given the columns specification</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>columns</strong> : a list of columns requested</p>
+<p><strong>grouper</strong> :  the categorical value to group by</p>
+<p><strong>field</strong> : the default field to select on</p>
+<p><strong>view</strong> : the view we want to take (e.g. how many groups)</p>
+<p><strong>page</strong> : the page of the view</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of dicts</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_interp_data">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_interp_data</code><span class="sig-paren">(</span><em>case</em>, <em>table</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_interp_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the interp data for this table</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">DataFrame</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_last_date">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_last_date</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_last_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the last date of our set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>case</strong> : the case</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mainstreet_data">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mainstreet_data</code><span class="sig-paren">(</span><em>case</em>, <em>window=3</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mainstreet_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Q queries directly for specific &#8216;windows&#8217; on the mainstreet report.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>window</strong> : selector for which query to run</p>
+<p><strong>window == 3:  top 10 max[(max trade price - min trade price)/(min trade price) by security, date] by security.</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame (not consistent with most core.* functions returning a blaze object;  but better to run all direct queries out of core.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mainstreet_max_price_spread">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mainstreet_max_price_spread</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mainstreet_max_price_spread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Q queries directly for specific &#8216;windows&#8217; on the mainstreet report.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A blaze object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mainstreet_notional">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mainstreet_notional</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mainstreet_notional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Q queries directly for specific &#8216;windows&#8217; on the mainstreet report.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A blaze object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mainstreet_trade_allocation">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mainstreet_trade_allocation</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mainstreet_trade_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Q queries directly for specific &#8216;windows&#8217; on the mainstreet report.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A dataframe.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mapped_data">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mapped_data</code><span class="sig-paren">(</span><em>case</em>, <em>table</em>, <em>field</em>, <em>mapper</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mapped_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>table</strong> : a table name</p>
+<p><strong>field</strong> : the field that that is the map field</p>
+<p><strong>mapper</strong> : the table where we can get maps</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>get_mapped_data(case, &#8216;exch_rate&#8217;, &#8216;crncy&#8217;, &#8216;crncy&#8217;)</p>
+<p>maps the numeric currency codes in the exch_rate to the string codes</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mapped_groupby">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mapped_groupby</code><span class="sig-paren">(</span><em>case</em>, <em>data</em>, <em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mapped_groupby" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide a grouper that aggregates according the .code mappings
+e.g. in the case of sides
+This will only work for one level down;  eg crncy and sec_type will map from security but not from transaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case</p>
+<p><strong>data</strong> : a blaze data object</p>
+<p class="last"><strong>field</strong> : the grouper field</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mappings_as_frame">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mappings_as_frame</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>broadcast=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mappings_as_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the mappings from broker/account/sec</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of mapping (account/broker/sec)</p>
+<p><strong>broadcast</strong> : boolean,</p>
+<blockquote>
+<div><p>if True, retrieve the data from the security table as a mappings
+the same lenght as the input (e.g. kind=&#8217;crncy&#8217;, broadcast=True will
+return the crncy codes for each of the securities and crncy code mapping)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_mappings_as_series">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_mappings_as_series</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_mappings_as_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the mappings as a series, indexed by oid</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of mapping (account/broker/sec)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_price_movements">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_price_movements</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>threshold=2</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_price_movements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_prices">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_prices</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_prices" title="Permalink to this definition">¶</a></dt>
+<dd><p>return prices with with an optional start/end date</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Data object representing the Selection</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_securities_with_groupby_and_reduce">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_securities_with_groupby_and_reduce</code><span class="sig-paren">(</span><em>case</em>, <em>sub_grouper</em>, <em>field</em>, <em>how='sum'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_securities_with_groupby_and_reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take data, broadcast the mappings (e.g. to the underlying codes), then groupby and reduce</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>sub_grouper: the sub grouper of this data</strong></p>
+<p><strong>field: string field from the data table</strong></p>
+<p><strong>how</strong> : string name of a summary function</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_symbol_rectify_data">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_symbol_rectify_data</code><span class="sig-paren">(</span><em>case</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_symbol_rectify_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the symbol rectification base data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A Dataframe</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.get_transactions">
+<code class="descclassname">neat.queries.core.</code><code class="descname">get_transactions</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.get_transactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>return transactions with with an optional start/end date</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Data object representing the Selection</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.histogram">
+<code class="descclassname">neat.queries.core.</code><code class="descname">histogram</code><span class="sig-paren">(</span><em>case</em>, <em>field</em>, <em>grouper=None</em>, <em>how='count'</em>, <em>transform=None</em>, <em>log=True</em>, <em>nbins=20</em>, <em>norm=False</em>, <em>data=None</em>, <em>view=None</em>, <em>page=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>a histogram</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>field</strong> : a field to summarize</p>
+<p><strong>grouper</strong> : optional, a list of groupby fields</p>
+<p><strong>how</strong> : string name of a summary function</p>
+<p><strong>log</strong> : to log the axes</p>
+<p><strong>nbins</strong> : number of bins to have</p>
+<p><strong>norm</strong> : to normalize the values</p>
+<p><strong>data</strong> : query or dataframe</p>
+<p><strong>view</strong> : the view we want to take (e.g. how many groups)</p>
+<p><strong>page</strong> : the page of the view</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A Dataframe</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.loader">
+<code class="descclassname">neat.queries.core.</code><code class="descname">loader</code><span class="sig-paren">(</span><em>case</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.loader" title="Permalink to this definition">¶</a></dt>
+<dd><p>load the data to db
+this will dump any previous data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>data_type</strong> : the type of data to load</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a q-loading expression</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.materialize">
+<code class="descclassname">neat.queries.core.</code><code class="descname">materialize</code><span class="sig-paren">(</span><em>case</em>, <em>data</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.materialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>materialize the passed in data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a materialized data</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.core.unary_filter2">
+<code class="descclassname">neat.queries.core.</code><code class="descname">unary_filter2</code><span class="sig-paren">(</span><em>data</em>, <em>fields</em>, <em>arg</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.core.unary_filter2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.holdings">
+<span id="neat-queries-holdings"></span><h2>neat.queries.holdings<a class="headerlink" href="#module-neat.queries.holdings" title="Permalink to this headline">¶</a></h2>
+<p>holdings queries</p>
+<dl class="function">
+<dt id="neat.queries.holdings.dfR">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">dfR</code><span class="sig-paren">(</span><em>frame</em>, <em>operations</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.dfR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.event_study">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">event_study</code><span class="sig-paren">(</span><em>case</em>, <em>account</em>, <em>security</em>, <em>event_date</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.event_study" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.events_overview">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">events_overview</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.events_overview" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.generate_event_holdings">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">generate_event_holdings</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.generate_event_holdings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holding_movements">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holding_movements</code><span class="sig-paren">(</span><em>case</em>, <em>field</em>, <em>grouper</em>, <em>threshold=10</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holding_movements" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>field</strong> : the field to measure differences</p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>threshold</strong> : how much away do we need</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a dict suitable for TimeSeriesWithEvents</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holdings_data_basic">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holdings_data_basic</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field=None</em>, <em>sense='pct'</em>, <em>columns=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holdings_data_basic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>sense: one of {&#8216;pct&#8217;, &#8216;sum&#8217;} which determines the column to present for a heatmap</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">DataFrame</p>
+<p class="last"># timeseries=False, drilldown=False</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holdings_data_basic_drilldown">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holdings_data_basic_drilldown</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field=None</em>, <em>sense='pct'</em>, <em>columns=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holdings_data_basic_drilldown" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>sense: one of {&#8216;pct&#8217;, &#8216;sum&#8217;} which determines the column to present for a heatmap</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">dict suitable for a heatmap</p>
+<p class="last"># timeseries=False, drilldown=True</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holdings_data_ts">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holdings_data_ts</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field=None</em>, <em>sense='pct'</em>, <em>columns=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holdings_data_ts" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>sense: one of {&#8216;pct&#8217;, &#8216;sum&#8217;} which determines the column to present for a heatmap</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">DataFrame</p>
+<p class="last"># timeseries=True, drilldown=False</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holdings_data_ts_drilldown">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holdings_data_ts_drilldown</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>field=None</em>, <em>sense='pct'</em>, <em>columns=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holdings_data_ts_drilldown" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>sense: one of {&#8216;pct&#8217;, &#8216;sum&#8217;} which determines the column to present for a heatmap</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">dict suitable for a bubble plot</p>
+<p class="last"># timeseries=True, drilldown=True</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.get_holdings_underlying">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">get_holdings_underlying</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.get_holdings_underlying" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the data from account_holdings which underlies all holdings reports</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>start</strong> : string/datetime, optional, defaults None</p>
+<p><strong>end</strong> : string/datetime, optional, defaults None</p>
+<p><strong>account</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter account</p>
+</div></blockquote>
+<p><strong>broker</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter broker</p>
+</div></blockquote>
+<p><strong>sec</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter security</p>
+</div></blockquote>
+<p><strong>side</strong> : code, optional, defaults None</p>
+<blockquote>
+<div><p>filter side</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A blaze object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.hist_diff_win">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">hist_diff_win</code><span class="sig-paren">(</span><em>holding</em>, <em>w_holding</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.hist_diff_win" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the holdings table filtered of holdings in events</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.holdings_bar">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">holdings_bar</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.holdings_bar" title="Permalink to this definition">¶</a></dt>
+<dd><p>A holdings grouping by the sub_grouper</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>sub_grouper: the sub grouper of this data, limited to [&#8216;sec_type&#8217;,&#8217;crncy&#8217;]</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.holdings_pie">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">holdings_pie</code><span class="sig-paren">(</span><em>case</em>, <em>sub_grouper</em>, <em>field</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.holdings_pie" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>A holdings grouping by the sub_grouper</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>sub_grouper: the sub grouper of this data, limited to [&#8216;sec_type&#8217;,&#8217;crncy&#8217;]</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.holdings_reference">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">holdings_reference</code><span class="sig-paren">(</span><em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.holdings_reference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.mergers_aqcuisitions">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">mergers_aqcuisitions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.mergers_aqcuisitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.pnl_summary">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">pnl_summary</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>fields=None</em>, <em>hows=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.pnl_summary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.prep_holdings_data">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">prep_holdings_data</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field</em>, <em>sense</em>, <em>data</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.prep_holdings_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>prep the holdings data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.price_events">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">price_events</code><span class="sig-paren">(</span><em>thresh</em>, <em>roll_win</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.price_events" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>thresh (int): n-standard deviations required to define price event</strong></p>
+<p><strong>roll_win (int): rolling window size of which to compute standard deviation</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.solitary_pnl_timeseries">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">solitary_pnl_timeseries</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>fields=None</em>, <em>hows=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.solitary_pnl_timeseries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.holdings.unique_events">
+<code class="descclassname">neat.queries.holdings.</code><code class="descname">unique_events</code><span class="sig-paren">(</span><em>w_holding</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.holdings.unique_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns unique [(account, sec, date)] in the set</p>
+</dd></dl>
+
+</div>
+<div class="section" id="neat-queries-legacy">
+<h2>neat.queries.legacy<a class="headerlink" href="#neat-queries-legacy" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-neat.queries.legacy"></span><p>report queries</p>
+<dl class="function">
+<dt id="neat.queries.legacy.get_account_concentration">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_account_concentration</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_account_concentration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_account_selection">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_account_selection</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_account_selection" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns account selection</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_account_summary">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_account_summary</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_account_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the summary by account</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_accounts_perf_mgmt">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_accounts_perf_mgmt</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_accounts_perf_mgmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_accumulated_before_price_move">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_accumulated_before_price_move</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_accumulated_before_price_move" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_block_trades">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_block_trades</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_block_trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_broker_allocation">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_broker_allocation</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_broker_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns broker allocation</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_broker_summary">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_broker_summary</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_broker_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a summary of the brokers</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_bunch_prices">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_bunch_prices</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_bunch_prices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_bunch_prices_buy">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_bunch_prices_buy</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_bunch_prices_buy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_bunch_prices_sell">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_bunch_prices_sell</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_bunch_prices_sell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_commission_distribution_acct_broker">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_commission_distribution_acct_broker</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_commission_distribution_acct_broker" title="Permalink to this definition">¶</a></dt>
+<dd><p>b</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_commission_distribution_sec_broker">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_commission_distribution_sec_broker</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_commission_distribution_sec_broker" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns commission distribution by sec broker</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_commission_summary">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_commission_summary</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_commission_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a summary of commissions</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_daily_security_summary_by_sec_id">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_daily_security_summary_by_sec_id</code><span class="sig-paren">(</span><em>case</em>, <em>sec=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_daily_security_summary_by_sec_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the daily security summary by a provided sec_id</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_day_trades">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_day_trades</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_day_trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_day_trades_25k">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_day_trades_25k</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_day_trades_25k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_dealer_interpositioned">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_dealer_interpositioned</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_dealer_interpositioned" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_disparate_trading">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_disparate_trading</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_disparate_trading" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_employee_trades">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_employee_trades</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_employee_trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_employee_trades_summary">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_employee_trades_summary</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_employee_trades_summary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_firm_concentration">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_firm_concentration</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_firm_concentration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_front_running_buy">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_front_running_buy</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_front_running_buy" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns front running buys</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_front_running_buy_custom">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_front_running_buy_custom</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_front_running_buy_custom" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns front running buys custom</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_front_running_sell">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_front_running_sell</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_front_running_sell" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns front running sells</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_front_running_sell_custom">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_front_running_sell_custom</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_front_running_sell_custom" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns front running sells custom</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_mf_rights_of_repo">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_mf_rights_of_repo</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_mf_rights_of_repo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_month_end_dates">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_month_end_dates</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_month_end_dates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_order_execution">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_order_execution</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_order_execution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_portfolio_turnover">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_portfolio_turnover</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_portfolio_turnover" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_price_move_analysis_fx">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_price_move_analysis_fx</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_price_move_analysis_fx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_price_quantity_by_sec_id">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_price_quantity_by_sec_id</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_price_quantity_by_sec_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_restricted_trades">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_restricted_trades</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_restricted_trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_rule_105">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_rule_105</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_rule_105" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_rule_105_broker">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_rule_105_broker</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_rule_105_broker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_security_summary">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_security_summary</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_security_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a summary of the securities</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_trade_allocation">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_trade_allocation</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_trade_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns trade allocation</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_trade_pattern">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_trade_pattern</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_trade_pattern" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_trade_pattern_account">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_trade_pattern_account</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_trade_pattern_account" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_trade_pattern_broker">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_trade_pattern_broker</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_trade_pattern_broker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_trades_by_broker">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_trades_by_broker</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_trades_by_broker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_wash_trades">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_wash_trades</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_wash_trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.legacy.get_window_dressing">
+<code class="descclassname">neat.queries.legacy.</code><code class="descname">get_window_dressing</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.legacy.get_window_dressing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.qa">
+<span id="neat-queries-qa"></span><h2>neat.queries.qa<a class="headerlink" href="#module-neat.queries.qa" title="Permalink to this headline">¶</a></h2>
+<p>quality assurance routines</p>
+<dl class="function">
+<dt id="neat.queries.qa.price_validation">
+<code class="descclassname">neat.queries.qa.</code><code class="descname">price_validation</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.qa.price_validation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Price validation of transactions</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.reports">
+<span id="neat-queries-reports"></span><h2>neat.queries.reports<a class="headerlink" href="#module-neat.queries.reports" title="Permalink to this headline">¶</a></h2>
+<p>report queries</p>
+<dl class="function">
+<dt id="neat.queries.reports.bi_date_grouper">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">bi_date_grouper</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>arg1</em>, <em>arg2</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.bi_date_grouper" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide a comparison of 2 kinds (account/broker/sec) when date_grouping</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of comparison, e.g. account/broker/sec</p>
+<p><strong>arg1</strong> : an identifier of the kind for the lhs</p>
+<p><strong>arg2</strong> : an identifier of the kind for the rhs</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.bicomparisons_account_timeseries">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">bicomparisons_account_timeseries</code><span class="sig-paren">(</span><em>case</em>, <em>grouper='account'</em>, <em>arg1='account1'</em>, <em>arg2='account2'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.bicomparisons_account_timeseries" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grouper</strong> : how to group, default to &#8216;account&#8217;</p>
+<p><strong>arg1</strong> : grouper1, default to &#8216;account1&#8217;</p>
+<p><strong>arg2</strong> : grouper2, default to &#8216;account2&#8217;</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame with date as index and columns meant to be a timeseries</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.blotter_statistics">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">blotter_statistics</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.blotter_statistics" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a table of numbers suitable for a badge widget</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>case</strong> : the case object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">DataFrame</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.comm_and_fees_xcorr">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">comm_and_fees_xcorr</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>field='fee'</em>, <em>how='sum'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.comm_and_fees_xcorr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Doc strings are for chumps</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.cross_trades_bubble">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">cross_trades_bubble</code><span class="sig-paren">(</span><em>case</em>, <em>cross='Default'</em>, <em>data=None</em>, <em>field='cross_notional'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.cross_trades_bubble" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cross</strong> : optional, the type of cross to compute</p>
+<p><strong>field</strong> : optional, the data to present (basically, cross_notional or cross_qty)</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict of data &amp; mappings</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.cross_trades_xcorr">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">cross_trades_xcorr</code><span class="sig-paren">(</span><em>case</em>, <em>cross='Default'</em>, <em>data=None</em>, <em>aggr='security'</em>, <em>field='cross_notional'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.cross_trades_xcorr" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a cross-trades xcorr</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cross</strong> : optional, the type of cross to compute</p>
+<p><strong>field</strong> : optional, the data to present (basically, cross_notional or cross_qty)</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict of data &amp; mappings</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.cross_trades_xcorr_table">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">cross_trades_xcorr_table</code><span class="sig-paren">(</span><em>case</em>, <em>cross='Default'</em>, <em>data=None</em>, <em>aggr='security'</em>, <em>field='cross_notional'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.cross_trades_xcorr_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a cross-trades xcorr</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>cross</strong> : optional, the type of cross to compute</p>
+<p><strong>field</strong> : optional, the data to present (basically, cross_notional or cross_qty)</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.dashboard_summary">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">dashboard_summary</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.dashboard_summary" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : the grouper</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.date_grouper">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">date_grouper</code><span class="sig-paren">(</span><em>case</em>, <em>field</em>, <em>grouper=None</em>, <em>pivot=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.date_grouper" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a field grouped by date</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : optional, an additional grouper / list of groupers (not including date)</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.get_bi_data">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">get_bi_data</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>arg1</em>, <em>arg2</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.get_bi_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide a comparison of 2 kinds (account/broker/sec) without date_grouping - in other words, just filter the data set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of comparison, e.g. account/broker/sec</p>
+<p><strong>arg1</strong> : an identifier of the kind for the lhs</p>
+<p><strong>arg2</strong> : an identifier of the kind for the rhs</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">DataFrame</p>
+<p>NOTE:  Would like to just be able to pass get_transactions the arg (broker = [{&#8216;broker1}, {&#8216;broker2&#8217;}] from the widget description itself, but don&#8217;t</p>
+<p class="last">know how to construct that from the dynamic results of the drop-down lists at this time.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.get_bi_histogram">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">get_bi_histogram</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>arg1</em>, <em>arg2</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.get_bi_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take get_bi_data output and run it through core.histogram()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of comparison, e.g. account/broker/sec</p>
+<p><strong>arg1</strong> : an identifier of the kind for the lhs</p>
+<p><strong>arg2</strong> : an identifier of the kind for the rhs</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.get_bi_pie">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">get_bi_pie</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>arg1</em>, <em>arg2</em>, <em>which='arg1'</em>, <em>sub_grouper=None</em>, <em>field=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.get_bi_pie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take get_bi_data output and run it through core.histogram()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of comparison, e.g. account/broker/sec</p>
+<p><strong>arg1</strong> : an identifier of the kind for the lhs</p>
+<p><strong>arg2</strong> : an identifier of the kind for the rhs</p>
+<p><strong>which: which of the two args to choose for the pie chart</strong></p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.get_bi_table">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">get_bi_table</code><span class="sig-paren">(</span><em>case</em>, <em>kind</em>, <em>arg1</em>, <em>arg2</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.get_bi_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take get_bi_data output and run it through core.histogram()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kind</strong> : the type of comparison, e.g. account/broker/sec</p>
+<p><strong>arg1</strong> : an identifier of the kind for the lhs</p>
+<p><strong>arg2</strong> : an identifier of the kind for the rhs</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.get_standard_transaction_groupings">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">get_standard_transaction_groupings</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field=None</em>, <em>map=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.get_standard_transaction_groupings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<blockquote>
+<div><p>grouper : a single grouper</p>
+</div></blockquote>
+<p><strong>field</strong> : optional,</p>
+<blockquote>
+<div><p>return only the grouper + field in the results</p>
+</div></blockquote>
+<p><strong>map</strong> : boolean, apply the number -&gt; name mappings</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.histogram">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">histogram</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field</em>, <em>data</em>, <em>log=True</em>, <em>nbins=20</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.histogram" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>A pass thru histogram</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper: the grouper of this histogram</strong></p>
+<p><strong>field: a single field name containing the values to be binned.</strong></p>
+<blockquote>
+<div><p>If a list is provided the first element will be taken as the field name.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.mainstreet_bar">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">mainstreet_bar</code><span class="sig-paren">(</span><em>case</em>, <em>mapper='sec'</em>, <em>window='3'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.mainstreet_bar" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Just map data by grouper and return.</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>mapper: the mapper</strong></p>
+<p><strong>window: indicates the core set of data to fetch</strong></p>
+<p><strong>data: the data</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a DataFrame</p>
+<p>NOTE:  that this returns the same data structure as &lt;foo&gt;.pie, so we don&#8217;t need a mainstreet_pie().</p>
+<p>It is set up with the args so that it can be reused for more than one.</p>
+<p class="last">What is this &#8216;window&#8217;?  This will be so much cleaner with the new report style.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.mainstreet_stacked_bar">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">mainstreet_stacked_bar</code><span class="sig-paren">(</span><em>case</em>, <em>grouper=None</em>, <em>cnt=10</em>, <em>field='notional'</em>, <em>how='sum'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.mainstreet_stacked_bar" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Just map data by grouper and return.</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper: the list of length 2 of the groupers;  the first will be the primary (columns);  the second will be the stacking levels;  if len(grouper)&gt;2, truncate to the first 2 elements.</strong></p>
+<p><strong>cnt: the number of columns to display</strong></p>
+<p><strong>field: the single value to aggregate.  This can only be a single item (or a list of length 1).</strong></p>
+<p><strong>data: the data</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a DataFrame</p>
+<p>NOTE:  that this returns the same data structure as &lt;foo&gt;.pie, so we don&#8217;t need a mainstreet_pie().</p>
+<p class="last">It is set up with the args so that it can be reused for more than one</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.notional_by_side">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">notional_by_side</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.notional_by_side" title="Permalink to this definition">¶</a></dt>
+<dd><p>return notional grouped by side</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Series of notional by side, indexed by side</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.old_mainstreet_bar">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">old_mainstreet_bar</code><span class="sig-paren">(</span><em>case</em>, <em>mapper='sec'</em>, <em>window='3'</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.old_mainstreet_bar" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Just map data by grouper and return.</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>mapper: the mapper</strong></p>
+<p><strong>window: indicates the core set of data to fetch</strong></p>
+<p><strong>data: the data</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a DataFrame</p>
+<p>NOTE:  that this returns the same data structure as &lt;foo&gt;.pie, so we don&#8217;t need a mainstreet_pie().</p>
+<p class="last">It is set up with the args so that it can be reused for more than one</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.pivot_by_grouper">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">pivot_by_grouper</code><span class="sig-paren">(</span><em>case</em>, <em>result</em>, <em>grouper</em>, <em>view=None</em>, <em>page=None</em>, <em>map=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.pivot_by_grouper" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the pivot of the result with a len(2) grouper</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>result</strong> : a DataFrame</p>
+<p><strong>grouper</strong> : a list of groupers</p>
+<p><strong>map</strong> : boolean, default True</p>
+<blockquote class="last">
+<div><p>apply the grouper mappings</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.solitary_transactions_timeseries">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">solitary_transactions_timeseries</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>field=None</em>, <em>how=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.solitary_transactions_timeseries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.test_scatter">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">test_scatter</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.test_scatter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.trading_behavior_xcorr">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">trading_behavior_xcorr</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>data=None</em>, <em>field='notional'</em>, <em>mincnt=10</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.trading_behavior_xcorr" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : the grouper</p>
+<p><strong>field</strong> : the field to xcorr on</p>
+<p><strong>mincnt</strong> : the minimum number of occurrences over which to accept a correlation</p>
+<p><strong>data</strong> : optional, the cached data object</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.trading_behavior_xcorr_table">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">trading_behavior_xcorr_table</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field='notional'</em>, <em>mincnt=10</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.trading_behavior_xcorr_table" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>grouper</strong> : the grouper</p>
+<p><strong>field</strong> : the field to xcorr on</p>
+<p><strong>mincnt</strong> : the minimum number of occurrences over which to accept a correlation</p>
+<p><strong>data</strong> : optional, the cached data object</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.transaction_groupings_hist">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">transaction_groupings_hist</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>field</em>, <em>how=None</em>, <em>log=True</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.transaction_groupings_hist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>grouper</strong> : a single grouper</p>
+<p><strong>field</strong> : a single output from the set produced by reports.get_standard_transaction_groupings()</p>
+<p><strong>how</strong> : string, optional,</p>
+<p><strong>log</strong> : boolean, default True</p>
+<blockquote>
+<div><p>indicates whether or not the horizontal axis of the histogram should be binned using log(x)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame by grouper with grouped standard data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.transaction_summary">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">transaction_summary</code><span class="sig-paren">(</span><em>case</em>, <em>grouper</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.transaction_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a data frame of summary statistics with a grouper</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.transactions">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">transactions</code><span class="sig-paren">(</span><em>case</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.transactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a transactions frame suitable for table display</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>data</strong> : if data is supplied, we suspect that it is a blaze.Selection object generated by the report query</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.reports.transactions_pie">
+<code class="descclassname">neat.queries.reports.</code><code class="descname">transactions_pie</code><span class="sig-paren">(</span><em>case</em>, <em>sub_grouper</em>, <em>field=None</em>, <em>data=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.reports.transactions_pie" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>A transactions grouping by the sub_grouper</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case: the case object</strong></p>
+<p><strong>sub_grouper: the sub grouper of this data, limited to [&#8216;sec_type&#8217;,&#8217;crncy&#8217;]</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.test">
+<span id="neat-queries-test"></span><h2>neat.queries.test<a class="headerlink" href="#module-neat.queries.test" title="Permalink to this headline">¶</a></h2>
+<p>test queries</p>
+<dl class="function">
+<dt id="neat.queries.test.groupby_multi_keys_notional">
+<code class="descclassname">neat.queries.test.</code><code class="descname">groupby_multi_keys_notional</code><span class="sig-paren">(</span><em>case</em>, <em>keys</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.test.groupby_multi_keys_notional" title="Permalink to this definition">¶</a></dt>
+<dd><p>show a groupby of multiple keys, aggregating by notional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case object</p>
+<p><strong>keys</strong> : the groupby keys (e.g. [&#8216;date&#8217;,&#8217;account&#8217;,&#8217;side&#8217;,&#8217;sec&#8217;])</p>
+<p><strong>kwargs</strong> : passed to get_transactions</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Blaze Split-apply-combine Data notional</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.queries.util">
+<span id="neat-queries-util"></span><h2>neat.queries.util<a class="headerlink" href="#module-neat.queries.util" title="Permalink to this headline">¶</a></h2>
+<p>query utilities, these are NOT imported into the main namespace</p>
+<dl class="class">
+<dt id="neat.queries.util.WListEvaluator">
+<em class="property">class </em><code class="descclassname">neat.queries.util.</code><code class="descname">WListEvaluator</code><span class="sig-paren">(</span><em>case</em>, <em>columns</em>, <em>field</em>, <em>grouper=None</em>, <em>xmin=None</em>, <em>xmax=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>create and return a list of the evaluated queries</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : the case</p>
+<p><strong>columns</strong> : the list of columns to evaluate</p>
+<p><strong>field</strong> : the primary field that we are showing</p>
+<p><strong>grouper</strong> : optional, string, the by for this widget</p>
+<p class="last"><strong>xmin, xmax: optional, the field limits</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.code">
+<code class="descname">code</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>the code</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.evaluate">
+<code class="descname">evaluate</code><span class="sig-paren">(</span><em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a dict of the evaluations</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.hist">
+<code class="descname">hist</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.hist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a dict describing the linkages</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.name">
+<code class="descname">name</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.reduce">
+<code class="descname">reduce</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>a reduction function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.queries.util.WListEvaluator.spark">
+<code class="descname">spark</code><span class="sig-paren">(</span><em>c</em>, <em>g</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.WListEvaluator.spark" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.util.create_bins">
+<code class="descclassname">neat.queries.util.</code><code class="descname">create_bins</code><span class="sig-paren">(</span><em>data</em>, <em>nbins</em>, <em>log</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.create_bins" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data</strong> : 1-d array-like</p>
+<p><strong>nbins</strong> : int, number of bins</p>
+<p><strong>log</strong> : create log bins</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">1-d array of bins</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.util.evaluate_groupby">
+<code class="descclassname">neat.queries.util.</code><code class="descname">evaluate_groupby</code><span class="sig-paren">(</span><em>groupby</em>, <em>f=None</em>, <em>view=None</em>, <em>page=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.evaluate_groupby" title="Permalink to this definition">¶</a></dt>
+<dd><p>only evaluate the view number of iterations for a groupby
+return a list of the results</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>groupby</strong> : a grouped object</p>
+<p><strong>f</strong> : a function accepting 2 args, groupname and grp, returning an object</p>
+<p><strong>view</strong> : the number of groups to return</p>
+<p class="last"><strong>page</strong> : start the view on page*view</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.queries.util.qexpr">
+<code class="descclassname">neat.queries.util.</code><code class="descname">qexpr</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.queries.util.qexpr" title="Permalink to this definition">¶</a></dt>
+<dd><p>makes python string q friendly</p>
+</dd></dl>
+
+<span class="target" id="module-neat.queries"></span></div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="neat.refdata.html" class="btn btn-neutral float-right" title="neat.refdata">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="neat.notebook.html" class="btn btn-neutral" title="neat.notebook"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.6-293-g7df05a2-dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

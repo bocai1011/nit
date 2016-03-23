@@ -1,0 +1,10 @@
+neat.notebook
+=============
+
+.. toctree::
+   :maxdepth: 3
+
+.. automodule:: neat.notebook
+    :members:
+    :undoc-members:
+    :show-inheritance:

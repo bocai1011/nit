@@ -1,0 +1,53 @@
+
+***********************************
+National Analytics Exam Tool (NEAT)
+***********************************
+
+**Date**: |today| **Version**: |version|
+
+`Source Repository <http://rg-sec-saws05.ad.sec.gov/neat-development/NEATO/tree/master>`__
+
+`Issues & Ideas <http://rg-sec-saws05.ad.sec.gov/neat-development/NEATO/issues>`__
+
+`WIKI <http://rg-sec-saws05.ad.sec.gov/neat-development/NEATO/wikis/home>`__
+
+`Release Notes <http://rg-sec-saws05.ad.sec.gov/neat-development/NEATO/blob/master/release_notes.md>`__
+
+NEAT
+~~~~
+
+**NEAT** is a tool to catch the bad guys.
+
+  - We use `kdb+, q, python, flask, pandas, blaze, javascript, react, react-bootstrap, react-router, highcharts, underscore, c++`
+  - We encourage everyone to learn as much of the stack as possible. It makes the team more robust, but also it's just more awesome that way.
+  - Great overview of `q <http://code.kx.com/wiki/JB:QforMortals2/contents>`_
+  - More `q and kdb+ resources <http://code.kx.com/wiki/Tutorials>`_
+  - We use `react.js` on the front end, start `here <https://facebook.github.io/react/docs/getting-started.html>`_ and `see here <https://facebook.github.io/react/docs/tutorial.html>`_
+  - We also use `react-bootstrap, react-router, underscore, highcharts, and occasionally jquery and d3`, in that order of frequency/importance.
+  - In python land we use `flask <http://flask.pocoo.org/>`_, `pandas <http://pandas.pydata.org/pandas-docs/stable/>`_, and `blaze <http://blaze.pydata.org/en/latest/>`_.
+  - If you can be comfortable with `react`, somewhat comfortable with `flask`, more comfortable with `pandas`, and a little conversant in `q`, that’s a great place to start.
+  - Everything else is icing on the cake, but you’ll probably pick it up on the job.
+
+
+Index
+~~~~~
+
+.. toctree::
+   :maxdepth: 3
+
+   neat
+   neat.config
+   neat.layouts
+   neat.notebook
+   neat.queries
+   neat.refdata
+   neat.reports
+   neat.summary
+   neat.util
+
+Tables
+~~~~~~
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

@@ -1,0 +1,192 @@
+@import colors
+@import layouts
+
+/**
+ * Mixin
+ */
+
+.staging-mixin
+  position relative
+  height 'calc(100% - %s)' % vert-margin
+
+.staging-header,
+.staging-mixin-controls,
+.staging-mixin-body
+  position relative
+  margin auto
+  width 80%
+  margin-top vert-margin
+
+
+/**
+ * Left-shift
+ */
+mixin-header-max-height = 250px
+mixin-body-controls-height = 52px
+
+.staging-mixin.left-shift
+  height 100%
+  bottom 0
+  width 'calc(%s - 4em)' % left-shift-width
+
+  > .staging-header,
+  > .staging-mixin-controls,
+  > .staging-mixin-body
+    position absolute
+    left 2em
+    width 100%
+
+  > .staging-header
+    transition max-height .2s ease
+    max-height mixin-header-max-height
+    overflow-y hidden
+    z-index left-shift-staging-header-z-index
+
+    /* Occlude header description if not enough space */
+    &:before
+      content ''
+      width 100%
+      height 100%
+      position absolute
+      left 0
+      top 0
+      background linear-gradient(transparent 90%, white)
+      pointer-events none
+
+    &:hover
+      max-height 100%
+
+  > .staging-mixin-controls
+    height mixin-body-controls-height
+    top 'calc(%s + %s)' % (mixin-header-max-height vert-margin)
+
+  > .staging-mixin-body
+    height 'calc(100% - %s - %s - %s - %s)' % (mixin-header-max-height mixin-body-controls-height 3*vert-margin 1em)
+    top 'calc(%s + %s + %s)' % (mixin-header-max-height mixin-body-controls-height 2*vert-margin)
+    bottom 1em
+
+  @media (max-width: left-shift-max-width)
+    width 'calc(%s - 4em)' % left-shift-sm-width
+
+
+/**
+ * Header
+ */
+
+.staging-header
+  background-color color-white
+  border 1px solid color-gray-light
+  border-radius border-radius
+  padding: 0 1.5em .5em 1.5em
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.12),0 3px 11px 0 rgba(0,0,0,.12)
+
+.staging-header .page-header
+  margin 1em 0
+  padding-bottom 0
+
+.staging-navigator
+  position absolute
+  cursor pointer
+  top 0
+  right 0
+  margin .5em .75em
+  font-size 1.96em
+
+
+/**
+ * Staging Nav Buttons
+ */
+
+.staging-navigator-buttons
+  float right
+  margin-left .5em
+
+.staging-navigator-buttons > a,
+.staging-navigator-buttons > button
+  font-size 1.25em
+  padding 0
+  border none
+  position relative
+  height 1em
+  width 1em
+  float left
+  color color-primary-alt-darkest
+
+  &:hover,
+  &:focus,
+  &:active,
+  >span:focus,
+  >span:active
+    color color-primary-alt
+    outline none
+
+  > span
+    position absolute
+    top 0
+    right 0
+
+
+/**
+ * Controls
+ */
+
+.staging-mixin-controls
+  > div
+    height mixin-body-controls-height
+
+  > div > h4
+    display: inline-block
+    line-height: 1.25em
+    vertical-align: middle
+
+  h2
+    font-size: 1.2em
+    font-weight: 200
+    float left
+
+  h2.success
+    color $brand-success
+
+  h2.warning
+    color $brand-warning
+
+span.success
+  color $brand-success
+
+.stagingPopover_top
+  max-width: 160px
+
+
+/**
+ * Staging Progress Bar
+ */
+
+.staging-navigator-progress-bar
+  float left
+
+.staging-progress-mini
+  margin-top: 10px
+  float: left
+  font-size: 22px
+
+.progress-complete span.glyphicon
+  color color-green-light
+
+.progress-incomplete span.glyphicon
+  color color-primary-alt-dark
+
+.progress-unavailable span.glyphicon
+  color color-gray-light
+
+.progress-here span.glyphicon:after
+  content: "\2212"
+  font-family: 'Glyphicons Halflings'
+  font-size .725em
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align center
+  position: absolute
+  bottom -.6em
+  left 0
+  width 100%
+  opacity: .25

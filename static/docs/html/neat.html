@@ -1,0 +1,2501 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>neat &mdash; NEAT 3.0.6-293-g7df05a2-dirty documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="NEAT 3.0.6-293-g7df05a2-dirty documentation" href="index.html"/>
+        <link rel="prev" title="National Analytics Exam Tool (NEAT)" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> NEAT</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">neat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.cache">neat.cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.cases">neat.cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.db">neat.db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.kq">neat.kq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.pcl">neat.pcl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.query">neat.query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.rectify">neat.rectify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.staging">neat.staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#neat-web">neat.web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-neat.wolf">neat.wolf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.config.html">neat.config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.commissions">neat.config.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.comparisons">neat.config.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.dashboard">neat.config.dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.database">neat.config.database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.deepdrilldowns">neat.config.deepdrilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.defaults">neat.config.defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.drilldowns">neat.config.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.holdings">neat.config.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.legacy">neat.config.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.performance">neat.config.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.reports">neat.config.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.testing">neat.config.testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.config.html#module-neat.config.transactions">neat.config.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.layouts.html">neat.layouts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.infer.html">neat.layouts.infer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.parser.html">neat.layouts.parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.api">neat.layouts.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.columns">neat.layouts.columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.layouts.html#module-neat.layouts.config">neat.layouts.config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.notebook.html">neat.notebook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.queries.html">neat.queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.XIFO">neat.queries.XIFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.commissions">neat.queries.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.core">neat.queries.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.holdings">neat.queries.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#neat-queries-legacy">neat.queries.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.qa">neat.queries.qa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.reports">neat.queries.reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.test">neat.queries.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.queries.html#module-neat.queries.util">neat.queries.util</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.refdata.html">neat.refdata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.refdata.html#module-neat.refdata.currencies">neat.refdata.currencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.reports.html">neat.reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.links">neat.reports.links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.manager">neat.reports.manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.reports.html#module-neat.reports.reports">neat.reports.reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.summary.html">neat.summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.commissions">neat.summary.commissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.comparisons">neat.summary.comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.drilldowns">neat.summary.drilldowns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.holdings">neat.summary.holdings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.legacy">neat.summary.legacy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.performance">neat.summary.performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.summary.html#module-neat.summary.transactions">neat.summary.transactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="neat.util.html">neat.util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.async">neat.util.async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neat.util.html#module-neat.util.util">neat.util.util</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">NEAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>neat</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/neat.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="neat">
+<h1>neat<a class="headerlink" href="#neat" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="module-neat.cache">
+<span id="neat-cache"></span><h2>neat.cache<a class="headerlink" href="#module-neat.cache" title="Permalink to this headline">¶</a></h2>
+<p>module to hold the cache API</p>
+<dl class="class">
+<dt id="neat.cache.Cache">
+<em class="property">class </em><code class="descclassname">neat.cache.</code><code class="descname">Cache</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a>, <a class="reference external" href="http://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a></p>
+<p>a cache holder</p>
+<dl class="attribute">
+<dt id="neat.cache.Cache.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.cache.Cache.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cache.Cache.evaluate">
+<code class="descname">evaluate</code><span class="sig-paren">(</span><em>name</em>, <em>f</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Cache.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>evaluate the method with caching</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string name of the object</p>
+<p class="last"><strong>**kwargs</strong> : the args to possibly cache on</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cache.Cache.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Cache.get_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cache.Cache.key">
+<code class="descname">key</code><span class="sig-paren">(</span><em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Cache.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cache.Cache.set_value">
+<code class="descname">set_value</code><span class="sig-paren">(</span><em>key</em>, <em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Cache.set_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cache.Cache.stats">
+<code class="descname">stats</code><a class="headerlink" href="#neat.cache.Cache.stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>return stats on the cache</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cache.CacheManager">
+<em class="property">class </em><code class="descclassname">neat.cache.</code><code class="descname">CacheManager</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.CacheManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>hold multiple caches, e.g. for queries &amp; widgets</p>
+<dl class="attribute">
+<dt id="neat.cache.CacheManager.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.cache.CacheManager.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cache.CacheManager.queries">
+<code class="descname">queries</code><a class="headerlink" href="#neat.cache.CacheManager.queries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cache.CacheManager.stats">
+<code class="descname">stats</code><a class="headerlink" href="#neat.cache.CacheManager.stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>return stats on the cache</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cache.CacheManager.widgets">
+<code class="descname">widgets</code><a class="headerlink" href="#neat.cache.CacheManager.widgets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cache.Queries">
+<em class="property">class </em><code class="descclassname">neat.cache.</code><code class="descname">Queries</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Queries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.cache.Cache" title="neat.cache.Cache"><code class="xref py py-class docutils literal"><span class="pre">neat.cache.Cache</span></code></a></p>
+<p>manage the queries cache</p>
+<dl class="attribute">
+<dt id="neat.cache.Queries.excludes">
+<code class="descname">excludes</code><em class="property"> = ['data', 'view', 'pages']</em><a class="headerlink" href="#neat.cache.Queries.excludes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cache.Stats">
+<em class="property">class </em><code class="descclassname">neat.cache.</code><code class="descname">Stats</code><span class="sig-paren">(</span><em>n=None</em>, <em>memory=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>hold the stats for a cache</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cache.Widgets">
+<em class="property">class </em><code class="descclassname">neat.cache.</code><code class="descname">Widgets</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.Widgets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.cache.Cache" title="neat.cache.Cache"><code class="xref py py-class docutils literal"><span class="pre">neat.cache.Cache</span></code></a></p>
+<p>manage the widgets cache</p>
+<dl class="attribute">
+<dt id="neat.cache.Widgets.excludes">
+<code class="descname">excludes</code><em class="property"> = ['data', 'columns']</em><a class="headerlink" href="#neat.cache.Widgets.excludes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.cache.sum_of_stats">
+<code class="descclassname">neat.cache.</code><code class="descname">sum_of_stats</code><span class="sig-paren">(</span><em>seq</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cache.sum_of_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the sum of multiple stats
+always return a Stats object even if the sequence is empty</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.cases">
+<span id="neat-cases"></span><h2>neat.cases<a class="headerlink" href="#module-neat.cases" title="Permalink to this headline">¶</a></h2>
+<p>manage the cases</p>
+<dl class="class">
+<dt id="neat.cases.Case">
+<em class="property">class </em><code class="descclassname">neat.cases.</code><code class="descname">Case</code><span class="sig-paren">(</span><em>parent</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.StateMixIn" title="neat.util.util.StateMixIn"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.StateMixIn</span></code></a>, <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>represent a single case. provide natural operatiosn for user/api interactions</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#neat.cases.Case.name" title="neat.cases.Case.name"><code class="xref py py-obj docutils literal"><span class="pre">name</span></code></a></td>
+<td>the full name of the case</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>base_name</td>
+<td>(string, the base name)</td>
+</tr>
+<tr class="row-even"><td>create_stamp</td>
+<td>(string timestamp,) the timestamp of the initial case creation</td>
+</tr>
+<tr class="row-odd"><td>update_stamp</td>
+<td>(string timestamp, optional,) the timestamp of the case update</td>
+</tr>
+<tr class="row-even"><td>root_dir</td>
+<td>(the base directory for this case)</td>
+</tr>
+<tr class="row-odd"><td>is_open</td>
+<td>(is the case open)</td>
+</tr>
+<tr class="row-even"><td>is_loaded</td>
+<td>(is the data loaded in the db)</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="neat.cases.Case.analytics">
+<code class="descname">analytics</code><a class="headerlink" href="#neat.cases.Case.analytics" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns analytics data for this case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.archive">
+<code class="descname">archive</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zips a case into a archive and places it inside a temp directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> : name of the archive, defaults to the casename.neat.zip</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the full path of the archive</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.cases.Case.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide any closing actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.config_name">
+<code class="descname">config_name</code><em class="property"> = 'case.state'</em><a class="headerlink" href="#neat.cases.Case.config_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.data">
+<code class="descname">data</code><a class="headerlink" href="#neat.cases.Case.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the KQ object which acts as a BlazeGetter</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.data_types">
+<code class="descname">data_types</code><em class="property"> = ('trade_blotter', 'initial_position', 'employee_trade_blotter', 'restricted_list')</em><a class="headerlink" href="#neat.cases.Case.data_types" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.dbdir">
+<code class="descname">dbdir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.dbdir" title="Permalink to this definition">¶</a></dt>
+<dd><p>db home directory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>use_short_path</strong> : boolean, if True, return the Windows short path</p>
+<blockquote>
+<div><p>the directory must exist!</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">path object for the dir</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.dbhome">
+<code class="descname">dbhome</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.dbhome" title="Permalink to this definition">¶</a></dt>
+<dd><p>db home directory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">q expression for the dbhome</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.dbreloader">
+<code class="descname">dbreloader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.dbreloader" title="Permalink to this definition">¶</a></dt>
+<dd><p>db reloader</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">q expression for the reloading</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.dbschema">
+<code class="descname">dbschema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.dbschema" title="Permalink to this definition">¶</a></dt>
+<dd><p>db schema</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">q expression for the dbschema</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.default_config">
+<code class="descname">default_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.default_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the default configuration if I don&#8217;t have one</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete the case and its data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.ensure_is_started">
+<code class="descname">ensure_is_started</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.ensure_is_started" title="Permalink to this definition">¶</a></dt>
+<dd><p>check that the we are indeed started
+if we are not, cleaning stop and restart</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msg</strong> : string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><strong>ValueError of the return message</strong></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>pass thru to the kq</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.is_closed">
+<code class="descname">is_closed</code><a class="headerlink" href="#neat.cases.Case.is_closed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.is_started">
+<code class="descname">is_started</code><a class="headerlink" href="#neat.cases.Case.is_started" title="Permalink to this definition">¶</a></dt>
+<dd><p>return boolean if kdb is started</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.kq">
+<code class="descname">kq</code><a class="headerlink" href="#neat.cases.Case.kq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.load_db">
+<code class="descname">load_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.load_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>load data into kdb</p>
+<p>dumps previous data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>boolean</strong> : indicator if the data set is loaded</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.lock">
+<code class="descname">lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>lock the case from external actions while we are working</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.log_and_eval">
+<code class="descname">log_and_eval</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.log_and_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>log &amp; eval</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.memory">
+<code class="descname">memory</code><a class="headerlink" href="#neat.cases.Case.memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the memory used as a Series</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.name">
+<code class="descname">name</code><a class="headerlink" href="#neat.cases.Case.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the full name of the case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>start=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>startup kq if needed, provide any opening actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.pcl">
+<code class="descname">pcl</code><a class="headerlink" href="#neat.cases.Case.pcl" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the pcl</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.qinit">
+<code class="descname">qinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.qinit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.read_csv">
+<code class="descname">read_csv</code><span class="sig-paren">(</span><em>path</em>, <em>table</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.read_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>load a csv directly to kdb, reference it via the table name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>path</strong> : a pathname to a file</p>
+<p class="last"><strong>table</strong> : the result variable in the kdb database</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.rename">
+<code class="descname">rename</code><span class="sig-paren">(</span><em>target=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>rename this case to the target name
+will be promotoed to a full-name if needed</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> : string name, optional if we are modifying</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.report">
+<code class="descname">report</code><span class="sig-paren">(</span><em>name</em>, <em>request=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.report" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the json for this report</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : for this report</p>
+<p><strong>request</strong> : the JSON request</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a json string-like</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.root_dir">
+<code class="descname">root_dir</code><a class="headerlink" href="#neat.cases.Case.root_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.save_table">
+<code class="descname">save_table</code><span class="sig-paren">(</span><em>table</em>, <em>format='splayed'</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.save_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>save the data to the specified table on disk</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>table</strong> : string table name on disk</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set my name based on the passed in name</p>
+<p>return a tuple of (base_name, create_stamp, update_stamp)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.start">
+<code class="descname">start</code><span class="sig-paren">(</span><em>credentials=None</em>, <em>q_exec=None</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>start up kdb/q process and connect server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>credentials: credentials if specified, default None (use default credentials)</strong></p>
+<p><strong>q_exec: q_exec path (default of None uses the default path)</strong></p>
+<p><strong>verbose</strong> : boolean, default False</p>
+<blockquote class="last">
+<div><p>set verbose mode</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.tables">
+<code class="descname">tables</code><a class="headerlink" href="#neat.cases.Case.tables" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the tables in the current namespace meta-data as a DataFrame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.unlock">
+<code class="descname">unlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>enable case for external actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.upload_file">
+<code class="descname">upload_file</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.upload_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chunk uploads files to a case&#8217;s directory (inside the <cite>uploads</cite> dir).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> : The HTTP request that the user creates to upload the file.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The full path to the uploaded file in the case&#8217;s root directory.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Case.uploads">
+<code class="descname">uploads</code><a class="headerlink" href="#neat.cases.Case.uploads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the path to the uploads dir within the case dir.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Case.wolf">
+<code class="descname">wolf</code><span class="sig-paren">(</span><em>data_type</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Case.wolf" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data_type</strong> : string</p>
+<blockquote>
+<div><p>name of the wolf</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a Wolf for this data_type</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cases.Cases">
+<em class="property">class </em><code class="descclassname">neat.cases.</code><code class="descname">Cases</code><span class="sig-paren">(</span><em>parent</em>, <em>root_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>represent a collection of Case objects
+provide operations for creation/destruction/listing of the cases</p>
+<p>Allow only None or a single case to be open at any one time</p>
+<dl class="method">
+<dt id="neat.cases.Cases.close">
+<code class="descname">close</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>close the provided case
+If its the current, then remove from current
+if name is None, then close the current case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case or None</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the closed case</p>
+<p class="last">Raises InvalidCase if the case does not exist</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.close_all">
+<code class="descname">close_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.close_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>close all cases</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>name</em>, <em>open=True</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.create" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+<p><strong>open</strong> : boolean, default is True</p>
+<blockquote>
+<div><p>open the newly created case</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a Case</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete the provided case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> : string name or case</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the actual case if we can find it</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the case full name, or raise KeyError if it doesn&#8217;t exist</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.items">
+<code class="descname">items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide an iterator over the cases
+iterate in the keys order</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.keys">
+<code class="descname">keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>sort from lastest to earliest</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.load">
+<code class="descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search the root directory for cases
+and create them, don&#8217;t open anything</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Cases.number_open_cases">
+<code class="descname">number_open_cases</code><a class="headerlink" href="#neat.cases.Cases.number_open_cases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Cases.number_total_cases">
+<code class="descname">number_total_cases</code><a class="headerlink" href="#neat.cases.Cases.number_total_cases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a current case. If the currently open case
+is the same, return it</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the opened case</p>
+<p class="last">Raises KeyError if the case does not exist</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.opened">
+<code class="descname">opened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.opened" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a list of the opened cases</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.cases.Cases.pcl">
+<code class="descname">pcl</code><a class="headerlink" href="#neat.cases.Cases.pcl" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the pcl</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.rename">
+<code class="descname">rename</code><span class="sig-paren">(</span><em>source</em>, <em>target=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>rename the source case to target case
+does not open the cases</p>
+<p>If these are not full case names they are promoted to such</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>source</strong> : string name or case</p>
+<p><strong>target</strong> : string name or None (for modify)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">new case</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.set_root_dir">
+<code class="descname">set_root_dir</code><span class="sig-paren">(</span><em>root_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.set_root_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>set/reset the root dir to the passed root_dir
+This should only be called internally as it moves the dir
+pointer completely</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.cases.Cases.values">
+<code class="descname">values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Cases.values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.cases.Q">
+<em class="property">class </em><code class="descclassname">neat.cases.</code><code class="descname">Q</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.Q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>a query handler, to provide namespacing for queries</p>
+<dl class="attribute">
+<dt id="neat.cases.Q.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.cases.Q.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.cases.split_case_name">
+<code class="descclassname">neat.cases.</code><code class="descname">split_case_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.cases.split_case_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a tuple of (base,creation,update) for a case_name
+raise ValueError if its invalid</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.db">
+<span id="neat-db"></span><h2>neat.db<a class="headerlink" href="#module-neat.db" title="Permalink to this headline">¶</a></h2>
+<p>manage the db creation/finalization</p>
+<dl class="class">
+<dt id="neat.db.CreateDB_get">
+<em class="property">class </em><code class="descclassname">neat.db.</code><code class="descname">CreateDB_get</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.db.DB" title="neat.db.DB"><code class="xref py py-class docutils literal"><span class="pre">neat.db.DB</span></code></a></p>
+<dl class="method">
+<dt id="neat.db.CreateDB_get.clear_db">
+<code class="descname">clear_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.clear_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>clear the existing data base for this data_type</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.CreateDB_get.load_and_promote">
+<code class="descname">load_and_promote</code><span class="sig-paren">(</span><em>path</em>, <em>dt</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.load_and_promote" title="Permalink to this definition">¶</a></dt>
+<dd><p>load and promote the data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>path</strong> : path to the data</p>
+<p><strong>dt</strong> : the string data type</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>boolean</strong> : if we succeded in loading</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.CreateDB_get.load_refdata">
+<code class="descname">load_refdata</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.load_refdata" title="Permalink to this definition">¶</a></dt>
+<dd><p>load up an inital refdata</p>
+<p>this is run before load_and_promote</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.CreateDB_get.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the create_db processing async</p>
+<p>should return immeditely</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.CreateDB_get.run_create_db">
+<code class="descname">run_create_db</code><span class="sig-paren">(</span><em>obj</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.run_create_db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.CreateDB_get.save_schema">
+<code class="descname">save_schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.CreateDB_get.save_schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>save the schema &amp; the meta info on the db</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.db.DB">
+<em class="property">class </em><code class="descclassname">neat.db.</code><code class="descname">DB</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a>, <a class="reference internal" href="neat.util.html#neat.util.async.AsyncMixIn" title="neat.util.async.AsyncMixIn"><code class="xref py py-class docutils literal"><span class="pre">neat.util.async.AsyncMixIn</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.db.DB.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.db.DB.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.error">
+<code class="descname">error</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>report an error</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.evaluate">
+<code class="descname">evaluate</code><span class="sig-paren">(</span><em>f</em>, <em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>safely run the function in a try except, raising any errors as DBErrors</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.load_and_promote">
+<code class="descname">load_and_promote</code><span class="sig-paren">(</span><em>path</em>, <em>dt</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.load_and_promote" title="Permalink to this definition">¶</a></dt>
+<dd><p>load and promote the data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>path</strong> : path to the data</p>
+<p><strong>dt</strong> : the string data type</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>boolean</strong> : if we succeded in loading</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.load_util_q">
+<code class="descname">load_util_q</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.load_util_q" title="Permalink to this definition">¶</a></dt>
+<dd><p>load up the utils</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.db.DB.queue">
+<code class="descname">queue</code><a class="headerlink" href="#neat.db.DB.queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.run_script">
+<code class="descname">run_script</code><span class="sig-paren">(</span><em>name</em>, <em>base_path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.run_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>load script by the name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.set_dtfnm">
+<code class="descname">set_dtfnm</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.set_dtfnm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.DB.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.DB.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.db.FinalizeDB_get">
+<em class="property">class </em><code class="descclassname">neat.db.</code><code class="descname">FinalizeDB_get</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.db.DB" title="neat.db.DB"><code class="xref py py-class docutils literal"><span class="pre">neat.db.DB</span></code></a></p>
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.build_account_holding">
+<code class="descname">build_account_holding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.build_account_holding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.build_daily_aggr_trans">
+<code class="descname">build_daily_aggr_trans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.build_daily_aggr_trans" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.load_refdata">
+<code class="descname">load_refdata</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.load_refdata" title="Permalink to this definition">¶</a></dt>
+<dd><p>load and promote the refdata
+these are served from the codedata directory</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the finalize_db processing async</p>
+<p>should return immeditely</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.run_finalize_db">
+<code class="descname">run_finalize_db</code><span class="sig-paren">(</span><em>obj</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.run_finalize_db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.db.FinalizeDB_get.update_security_mappings">
+<code class="descname">update_security_mappings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.db.FinalizeDB_get.update_security_mappings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.kq">
+<span id="neat-kq"></span><h2>neat.kq<a class="headerlink" href="#module-neat.kq" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="neat.kq.KQProxy">
+<em class="property">class </em><code class="descclassname">neat.kq.</code><code class="descname">KQProxy</code><span class="sig-paren">(</span><em>uri</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>provide a proxy object to the actual Blaze KQ object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> : a uniform-resource-identifier</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="neat.kq.KQProxy.connect_args">
+<code class="descname">connect_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.connect_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>our connection arguments</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.kq.KQProxy.data">
+<code class="descname">data</code><a class="headerlink" href="#neat.kq.KQProxy.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>expr</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.kq.KQProxy.is_started">
+<code class="descname">is_started</code><a class="headerlink" href="#neat.kq.KQProxy.is_started" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.load_libs">
+<code class="descname">load_libs</code><span class="sig-paren">(</span><em>libpath</em>, <em>libs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.load_libs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.kq.KQProxy.memory">
+<code class="descname">memory</code><a class="headerlink" href="#neat.kq.KQProxy.memory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.read_kdb">
+<code class="descname">read_kdb</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.read_kdb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>name</em>, <em>value</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.start">
+<code class="descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.kq.KQProxy.tables">
+<code class="descname">tables</code><a class="headerlink" href="#neat.kq.KQProxy.tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.kq.KQProxy.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>table</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.kq.KQProxy.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>provide update services on the table</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.pcl">
+<span id="neat-pcl"></span><h2>neat.pcl<a class="headerlink" href="#module-neat.pcl" title="Permalink to this headline">¶</a></h2>
+<p>pcl top-level managemenet</p>
+<dl class="class">
+<dt id="neat.pcl.PCL">
+<em class="property">class </em><code class="descclassname">neat.pcl.</code><code class="descname">PCL</code><span class="sig-paren">(</span><em>root_dir=None</em>, <em>verbose=False</em>, <em>mode='dev'</em>, <em>port=None</em>, <em>open_browser=None</em>, <em>server=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.StateMixIn" title="neat.util.util.StateMixIn"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.StateMixIn</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.pcl.PCL.cases">
+<code class="descname">cases</code><a class="headerlink" href="#neat.pcl.PCL.cases" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a sorted list of cases names</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.close">
+<code class="descname">close</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>close the provided case
+If its the current, then remove from current
+if name is None, then close the current case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case or None</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the closed case</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>KeyError if the case does not exist</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.close_all">
+<code class="descname">close_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.close_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>close all cases</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.config_name">
+<code class="descname">config_name</code><em class="property"> = 'neat.config'</em><a class="headerlink" href="#neat.pcl.PCL.config_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>name</em>, <em>open=True</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.create" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+<p><strong>open</strong> : boolean, default is True</p>
+<blockquote>
+<div><p>open the newly created case</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a Case</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.create_reports_specification">
+<code class="descname">create_reports_specification</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.create_reports_specification" title="Permalink to this definition">¶</a></dt>
+<dd><p>if we are in development, then regenerate
+the ReportsConfig.js</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.current">
+<code class="descname">current</code><a class="headerlink" href="#neat.pcl.PCL.current" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the current case (could be None)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.default_config">
+<code class="descname">default_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.default_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the default configuration if I don&#8217;t have one</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete the named case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><strong>KeyError if the case does not exist</strong></p>
+<p class="last"><strong>ValueError if it cannot delete the case</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.delete_all">
+<code class="descname">delete_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.delete_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete all cases!</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.get_config">
+<code class="descname">get_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>reset the version whenver this is requested</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.get_status">
+<code class="descname">get_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a Status object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.host">
+<code class="descname">host</code><a class="headerlink" href="#neat.pcl.PCL.host" title="Permalink to this definition">¶</a></dt>
+<dd><p>if I am in server mode ,return a broadcastable host</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.is_dev_mode">
+<code class="descname">is_dev_mode</code><a class="headerlink" href="#neat.pcl.PCL.is_dev_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.is_notebook_mode">
+<code class="descname">is_notebook_mode</code><a class="headerlink" href="#neat.pcl.PCL.is_notebook_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.is_prod_mode">
+<code class="descname">is_prod_mode</code><a class="headerlink" href="#neat.pcl.PCL.is_prod_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.is_test_mode">
+<code class="descname">is_test_mode</code><a class="headerlink" href="#neat.pcl.PCL.is_test_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.log_info">
+<code class="descname">log_info</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.log_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>logger</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.modes">
+<code class="descname">modes</code><em class="property"> = ['prod', 'dev', 'notebook', 'test', 'local']</em><a class="headerlink" href="#neat.pcl.PCL.modes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a current case. If the currently open case
+is the same, return it</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> : string or case</p>
+<blockquote>
+<div><p>string case name in the root_dir</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the opened case</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>KeyError if the case does not exist</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.opened">
+<code class="descname">opened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.opened" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a list of the opened cases</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.restore">
+<code class="descname">restore</code><span class="sig-paren">(</span><em>path</em>, <em>overwrite</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.restore" title="Permalink to this definition">¶</a></dt>
+<dd><p>restore an archived case to the pcl root_dir
+does not open the case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>path</strong> : path to an archived case</p>
+<p class="last"><strong>overwrite</strong> : boolean, if True, then overwrite the extracts if they exist</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.set_root_dir">
+<code class="descname">set_root_dir</code><span class="sig-paren">(</span><em>root_dir=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.set_root_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>setup my root_directory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>root_dir</strong> : string-like base directory for the app, default None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.set_version">
+<code class="descname">set_version</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.set_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the version in the config</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.setup_data">
+<code class="descname">setup_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.setup_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>copy the test data to the root_dir if needed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.start_notebook">
+<code class="descname">start_notebook</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.start_notebook" title="Permalink to this definition">¶</a></dt>
+<dd><p>startup an ipython notebook server</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.pcl.PCL.stop_notebook">
+<code class="descname">stop_notebook</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.PCL.stop_notebook" title="Permalink to this definition">¶</a></dt>
+<dd><p>stop the NEAT notebook server</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.pcl.PCL.url">
+<code class="descname">url</code><a class="headerlink" href="#neat.pcl.PCL.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the access url</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.pcl.create_and_open">
+<code class="descclassname">neat.pcl.</code><code class="descname">create_and_open</code><span class="sig-paren">(</span><em>case</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.pcl.create_and_open" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : string case</p>
+<p class="last"><strong>returns an open case</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.query">
+<span id="neat-query"></span><h2>neat.query<a class="headerlink" href="#module-neat.query" title="Permalink to this headline">¶</a></h2>
+<p>manage user-level queries / functions</p>
+<dl class="class">
+<dt id="neat.query.Namespace">
+<em class="property">class </em><code class="descclassname">neat.query.</code><code class="descname">Namespace</code><span class="sig-paren">(</span><em>name</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.Namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>manage a QueryManager namespace</p>
+<p>These are returned as accessor objects to provide separate
+query namespacees</p>
+<dl class="attribute">
+<dt id="neat.query.Namespace.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.query.Namespace.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.query.Namespace.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.Namespace.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.query.Namespace.set_parent">
+<code class="descname">set_parent</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.Namespace.set_parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.query.Query">
+<em class="property">class </em><code class="descclassname">neat.query.</code><code class="descname">Query</code><span class="sig-paren">(</span><em>name</em>, <em>f</em>, <em>doc=None</em>, <em>cache=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.Query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>hold a single user-level query parameters</p>
+<dl class="attribute">
+<dt id="neat.query.Query.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.query.Query.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.query.Query.set_parent">
+<code class="descname">set_parent</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.Query.set_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the parent &amp; my evaluator</p>
+<p>parent is the Namespace
+evaluator is the QueryManager</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.query.QueryManager">
+<em class="property">class </em><code class="descclassname">neat.query.</code><code class="descname">QueryManager</code><span class="sig-paren">(</span><em>parent</em>, <em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.QueryManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>hold a dictionary of queries
+provide execution services via a PCL</p>
+<p>provide serialization / deserialization of the queries</p>
+<dl class="method">
+<dt id="neat.query.QueryManager.load">
+<code class="descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.QueryManager.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>load queries from the query store</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.query.QueryManager.pcl">
+<code class="descname">pcl</code><a class="headerlink" href="#neat.query.QueryManager.pcl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.query.QueryManager.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.QueryManager.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>save the queries to a store</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.query.QueryManager.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.query.QueryManager.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the namespaces in the object</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.rectify">
+<span id="neat-rectify"></span><h2>neat.rectify<a class="headerlink" href="#module-neat.rectify" title="Permalink to this headline">¶</a></h2>
+<p>manage data recitifcations</p>
+<dl class="class">
+<dt id="neat.rectify.Interpretation">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Interpretation</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Rectify" title="neat.rectify.Rectify"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Rectify</span></code></a></p>
+<dl class="method">
+<dt id="neat.rectify.Interpretation.get_table_mapping">
+<code class="descname">get_table_mapping</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation.get_table_mapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.rectify.Interpretation.mappings">
+<code class="descname">mappings</code><em class="property"> = {'currency': 'crncy'}</em><a class="headerlink" href="#neat.rectify.Interpretation.mappings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.rectify.Interpretation.tables">
+<code class="descname">tables</code><em class="property"> = ['side', 'currency', 'sec_type']</em><a class="headerlink" href="#neat.rectify.Interpretation.tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Interpretation_get">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Interpretation_get</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Interpretation" title="neat.rectify.Interpretation"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Interpretation</span></code></a></p>
+<dl class="method">
+<dt id="neat.rectify.Interpretation_get.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation_get.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Interpretation_set">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Interpretation_set</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Interpretation" title="neat.rectify.Interpretation"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Interpretation</span></code></a></p>
+<dl class="method">
+<dt id="neat.rectify.Interpretation_set.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Interpretation_set.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the interpreted currency,sides,sec_type in the database</p>
+<p>data here is a dict of data frames</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Rectify">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Rectify</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Rectify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>hold recitifcation logic</p>
+<dl class="attribute">
+<dt id="neat.rectify.Rectify.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.rectify.Rectify.case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.rectify.Rectify.get_table_mapping">
+<code class="descname">get_table_mapping</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Rectify.get_table_mapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.rectify.Rectify.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Rectify.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.rectify.Rectify.update_table">
+<code class="descname">update_table</code><span class="sig-paren">(</span><em>table</em>, <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Rectify.update_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the table in the database, overwriting the code column with the data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>table</strong> : string table name</p>
+<p class="last"><strong>data</strong> : data frame that update_field can update</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Symbol">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Symbol</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Rectify" title="neat.rectify.Rectify"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Rectify</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Symbol_get">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Symbol_get</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Symbol_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Symbol" title="neat.rectify.Symbol"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Symbol</span></code></a></p>
+<dl class="method">
+<dt id="neat.rectify.Symbol_get.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Symbol_get.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.rectify.Symbol_set">
+<em class="property">class </em><code class="descclassname">neat.rectify.</code><code class="descname">Symbol_set</code><span class="sig-paren">(</span><em>parent</em>, <em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Symbol_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.rectify.Symbol" title="neat.rectify.Symbol"><code class="xref py py-class docutils literal"><span class="pre">neat.rectify.Symbol</span></code></a></p>
+<dl class="method">
+<dt id="neat.rectify.Symbol_set.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.rectify.Symbol_set.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the symbol table in the db</p>
+<p>data here is a single data frame</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-neat.staging">
+<span id="neat-staging"></span><h2>neat.staging<a class="headerlink" href="#module-neat.staging" title="Permalink to this headline">¶</a></h2>
+<p>staging management</p>
+<dl class="class">
+<dt id="neat.staging.CreateDB">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">CreateDB</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.CreateDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.SetStage" title="neat.staging.SetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.SetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.CreateDB.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.CreateDB.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.CreateDB.is_async">
+<code class="descname">is_async</code><em class="property"> = True</em><a class="headerlink" href="#neat.staging.CreateDB.is_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.CreateDB.name">
+<code class="descname">name</code><em class="property"> = 'create_database'</em><a class="headerlink" href="#neat.staging.CreateDB.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.FinalizeDB">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">FinalizeDB</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.FinalizeDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.SetStage" title="neat.staging.SetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.SetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.FinalizeDB.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.FinalizeDB.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.FinalizeDB.is_async">
+<code class="descname">is_async</code><em class="property"> = True</em><a class="headerlink" href="#neat.staging.FinalizeDB.is_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.FinalizeDB.name">
+<code class="descname">name</code><em class="property"> = 'finalize_database'</em><a class="headerlink" href="#neat.staging.FinalizeDB.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetBBGDataStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetBBGDataStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetBBGDataStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.GetStage" title="neat.staging.GetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.GetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.GetBBGDataStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetBBGDataStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.GetBBGDataStage.name">
+<code class="descname">name</code><em class="property"> = 'get_bbg_data'</em><a class="headerlink" href="#neat.staging.GetBBGDataStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.GetBBGDataStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetBBGDataStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetCleanErrors">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetCleanErrors</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetCleanErrors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.GetCsv" title="neat.staging.GetCsv"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.GetCsv</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.staging.GetCleanErrors.name">
+<code class="descname">name</code><em class="property"> = 'get_cleaning_errors'</em><a class="headerlink" href="#neat.staging.GetCleanErrors.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.GetCleanErrors.path_to_file">
+<code class="descname">path_to_file</code><a class="headerlink" href="#neat.staging.GetCleanErrors.path_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the path to the file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetCsv">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetCsv</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetCsv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.Stage" title="neat.staging.Stage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.Stage</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.staging.GetCsv.name">
+<code class="descname">name</code><em class="property"> = 'get_csv'</em><a class="headerlink" href="#neat.staging.GetCsv.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.GetCsv.path_to_file">
+<code class="descname">path_to_file</code><a class="headerlink" href="#neat.staging.GetCsv.path_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the path to the file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.GetCsv.read_file">
+<code class="descname">read_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetCsv.read_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>read in the file, return a DataFrame</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetImportDataStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetImportDataStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetImportDataStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.Stage" title="neat.staging.Stage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.Stage</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.staging.GetImportDataStage.name">
+<code class="descname">name</code><em class="property"> = 'get_import_data'</em><a class="headerlink" href="#neat.staging.GetImportDataStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetInterpretationTablesStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetInterpretationTablesStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetInterpretationTablesStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.GetStage" title="neat.staging.GetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.GetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.GetInterpretationTablesStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetInterpretationTablesStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd><p>return data for the interpretation stage</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.GetInterpretationTablesStage.name">
+<code class="descname">name</code><em class="property"> = 'get_interpretation_tables'</em><a class="headerlink" href="#neat.staging.GetInterpretationTablesStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.Stage" title="neat.staging.Stage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.Stage</span></code></a></p>
+<p>provide stages 2-5 get processing</p>
+<dl class="method">
+<dt id="neat.staging.GetStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.GetStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.GetSymbolTableStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">GetSymbolTableStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetSymbolTableStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.GetStage" title="neat.staging.GetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.GetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.GetSymbolTableStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.GetSymbolTableStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.GetSymbolTableStage.name">
+<code class="descname">name</code><em class="property"> = 'get_symbol_tables'</em><a class="headerlink" href="#neat.staging.GetSymbolTableStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.SetBBGDataStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">SetBBGDataStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetBBGDataStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.SetStage" title="neat.staging.SetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.SetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.SetBBGDataStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetBBGDataStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.SetBBGDataStage.is_async">
+<code class="descname">is_async</code><em class="property"> = True</em><a class="headerlink" href="#neat.staging.SetBBGDataStage.is_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.SetBBGDataStage.name">
+<code class="descname">name</code><em class="property"> = 'set_bbg_data'</em><a class="headerlink" href="#neat.staging.SetBBGDataStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetBBGDataStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetBBGDataStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetBBGDataStage.set_parms">
+<code class="descname">set_parms</code><span class="sig-paren">(</span><em>method</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetBBGDataStage.set_parms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetBBGDataStage.set_request">
+<code class="descname">set_request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetBBGDataStage.set_request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.SetImportDataStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">SetImportDataStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetImportDataStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.Stage" title="neat.staging.Stage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.Stage</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.staging.SetImportDataStage.name">
+<code class="descname">name</code><em class="property"> = 'set_import_data'</em><a class="headerlink" href="#neat.staging.SetImportDataStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.SetInterpretationTablesStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">SetInterpretationTablesStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetInterpretationTablesStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.SetStage" title="neat.staging.SetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.SetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.SetInterpretationTablesStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetInterpretationTablesStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd><p>write the received data to the database tables</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.SetInterpretationTablesStage.name">
+<code class="descname">name</code><em class="property"> = 'set_interpretation_tables'</em><a class="headerlink" href="#neat.staging.SetInterpretationTablesStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetInterpretationTablesStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetInterpretationTablesStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.SetStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">SetStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.Stage" title="neat.staging.Stage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.Stage</span></code></a></p>
+<p>provide stages 2-5 set processing; these are asynchronous</p>
+<dl class="method">
+<dt id="neat.staging.SetStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.SetSymbolTableStage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">SetSymbolTableStage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetSymbolTableStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neat.staging.SetStage" title="neat.staging.SetStage"><code class="xref py py-class docutils literal"><span class="pre">neat.staging.SetStage</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.SetSymbolTableStage.create_processor">
+<code class="descname">create_processor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetSymbolTableStage.create_processor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.SetSymbolTableStage.name">
+<code class="descname">name</code><em class="property"> = 'set_symbol_tables'</em><a class="headerlink" href="#neat.staging.SetSymbolTableStage.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.SetSymbolTableStage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.SetSymbolTableStage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.Stage">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">Stage</code><span class="sig-paren">(</span><em>case</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<dl class="method">
+<dt id="neat.staging.Stage.acquire">
+<code class="descname">acquire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.acquire" title="Permalink to this definition">¶</a></dt>
+<dd><p>acquire the staging lock</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.check_file_exists">
+<code class="descname">check_file_exists</code><span class="sig-paren">(</span><em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.check_file_exists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.Stage.is_async">
+<code class="descname">is_async</code><em class="property"> = False</em><a class="headerlink" href="#neat.staging.Stage.is_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.process">
+<code class="descname">process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>execute the function with locks; this is a synchronous function
+for async, need to acquire / release upon done</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.release">
+<code class="descname">release</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.release" title="Permalink to this definition">¶</a></dt>
+<dd><p>release the staging lock</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.set_data_type">
+<code class="descname">set_data_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.set_data_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>set data from the request</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.set_parms">
+<code class="descname">set_parms</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.set_parms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.set_path">
+<code class="descname">set_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.set_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Stage.set_request">
+<code class="descname">set_request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Stage.set_request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.Stage.wolf">
+<code class="descname">wolf</code><a class="headerlink" href="#neat.staging.Stage.wolf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.staging.Staging">
+<em class="property">class </em><code class="descclassname">neat.staging.</code><code class="descname">Staging</code><span class="sig-paren">(</span><em>case</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a></p>
+<p>the staging dispatcher</p>
+<dl class="method">
+<dt id="neat.staging.Staging.acquire">
+<code class="descname">acquire</code><span class="sig-paren">(</span><em>caller=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.acquire" title="Permalink to this definition">¶</a></dt>
+<dd><p>acquire the lock</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>caller=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>reset the queue</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.create_database">
+<code class="descname">create_database</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.create_database" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.finalize_database">
+<code class="descname">finalize_database</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.finalize_database" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>return an element from the queue</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_bbg_data">
+<code class="descname">get_bbg_data</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_bbg_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_cleaning_errors">
+<code class="descname">get_cleaning_errors</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_cleaning_errors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_csv">
+<code class="descname">get_csv</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_csv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_import_data">
+<code class="descname">get_import_data</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_import_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_interpretation_tables">
+<code class="descname">get_interpretation_tables</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_interpretation_tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.get_symbol_tables">
+<code class="descname">get_symbol_tables</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.get_symbol_tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.log_info">
+<code class="descname">log_info</code><span class="sig-paren">(</span><em>m</em>, <em>caller=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.log_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>klass</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>manage the data import process</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>klass</strong> : the staging klass to execute</p>
+<p class="last"><strong>request</strong> : a HTTP request object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.progress">
+<code class="descname">progress</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.progress" title="Permalink to this definition">¶</a></dt>
+<dd><p>return progress form the staging queue
+for any data_type</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.release">
+<code class="descname">release</code><span class="sig-paren">(</span><em>caller=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.release" title="Permalink to this definition">¶</a></dt>
+<dd><p>release the lock</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.set_bbg_data">
+<code class="descname">set_bbg_data</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.set_bbg_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.set_import_data">
+<code class="descname">set_import_data</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.set_import_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.set_interpretation_tables">
+<code class="descname">set_interpretation_tables</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.set_interpretation_tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.staging.Staging.set_symbol_tables">
+<code class="descname">set_symbol_tables</code><span class="sig-paren">(</span><em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.Staging.set_symbol_tables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.Staging.size">
+<code class="descname">size</code><a class="headerlink" href="#neat.staging.Staging.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>return number of elements</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.staging.construct_staging_import_data_layout">
+<code class="descclassname">neat.staging.</code><code class="descname">construct_staging_import_data_layout</code><span class="sig-paren">(</span><em>request</em>, <em>layout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.construct_staging_import_data_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a dict of the staging import_data comm dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>request</strong> : the request to copy</p>
+<p class="last"><strong>layout</strong> : dict of layouts, optional</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.staging.make_staging_function">
+<code class="descclassname">neat.staging.</code><code class="descname">make_staging_function</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.staging.make_staging_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.staging.s">
+<code class="descclassname">neat.staging.</code><code class="descname">s</code><a class="headerlink" href="#neat.staging.s" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#neat.staging.GetCsv" title="neat.staging.GetCsv"><code class="xref py py-class docutils literal"><span class="pre">GetCsv</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="neat-web">
+<h2>neat.web<a class="headerlink" href="#neat-web" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-neat.wolf">
+<span id="neat-wolf"></span><h2>neat.wolf<a class="headerlink" href="#module-neat.wolf" title="Permalink to this headline">¶</a></h2>
+<p>wolf parsers python wrapper / communicator</p>
+<dl class="class">
+<dt id="neat.wolf.Pack">
+<em class="property">class </em><code class="descclassname">neat.wolf.</code><code class="descname">Pack</code><span class="sig-paren">(</span><em>parent</em>, <em>data_types</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Pack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/dev/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>Organize the pack to hold a wolf for a specified config data_type</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong> : object, parent PCL</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="neat.wolf.Pack.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.wolf.Pack.case" title="Permalink to this definition">¶</a></dt>
+<dd><p>return my case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Pack.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>data_type</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Pack.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a NEW a wolf for the specified configuration config</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_type</strong> : a data_type of wolf processor</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the created Wolf</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neat.wolf.Wolf">
+<em class="property">class </em><code class="descclassname">neat.wolf.</code><code class="descname">Wolf</code><span class="sig-paren">(</span><em>parent</em>, <em>data_type</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="neat.util.html#neat.util.util.CaseLogger" title="neat.util.util.CaseLogger"><code class="xref py py-class docutils literal"><span class="pre">neat.util.util.CaseLogger</span></code></a>, <a class="reference internal" href="neat.util.html#neat.util.async.AsyncMixIn" title="neat.util.async.AsyncMixIn"><code class="xref py py-class docutils literal"><span class="pre">neat.util.async.AsyncMixIn</span></code></a></p>
+<dl class="attribute">
+<dt id="neat.wolf.Wolf.case">
+<code class="descname">case</code><a class="headerlink" href="#neat.wolf.Wolf.case" title="Permalink to this definition">¶</a></dt>
+<dd><p>return my case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>copy constructor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.create_and_run_cleaning_process">
+<code class="descname">create_and_run_cleaning_process</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.create_and_run_cleaning_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the cleaning processing async</p>
+<p>should return immeditely</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="neat.wolf.Wolf.delimiters">
+<code class="descname">delimiters</code><em class="property"> = [',', '|']</em><a class="headerlink" href="#neat.wolf.Wolf.delimiters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.error">
+<code class="descname">error</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>save, then raise an error</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> : string value of the error message</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.log_info">
+<code class="descname">log_info</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.log_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.wolf.Wolf.pcl">
+<code class="descname">pcl</code><a class="headerlink" href="#neat.wolf.Wolf.pcl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.processed_path">
+<code class="descname">processed_path</code><span class="sig-paren">(</span><em>which</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.processed_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the absolute file path of the processed input file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>which</strong> : string, allowed values are [&#8216;ini&#8217;,&#8217;csv&#8217;,&#8217;error&#8217;]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a pypath</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.progress">
+<code class="descname">progress</code><span class="sig-paren">(</span><em>line</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.progress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.wolf.Wolf.queue">
+<code class="descname">queue</code><a class="headerlink" href="#neat.wolf.Wolf.queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="neat.wolf.Wolf.root_dir">
+<code class="descname">root_dir</code><a class="headerlink" href="#neat.wolf.Wolf.root_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the wolf process, providing queueable updates to the parent</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> : string, the path of the ini file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.run_cleaning_process">
+<code class="descname">run_cleaning_process</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.run_cleaning_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the cleaning process</p>
+<p>This is run async</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> : string, the path of the ini file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>forcibly stop wolf</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>message</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>we want to include this as a top-level message item</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="neat.wolf.Wolf.verify">
+<code class="descname">verify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.wolf.Wolf.verify" title="Permalink to this definition">¶</a></dt>
+<dd><p>verify the output data from wolf
+raise a ImportingError if we got nothing
+error output is in self.error_path</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-neat"></span><dl class="function">
+<dt id="neat.get_versions_info">
+<code class="descclassname">neat.</code><code class="descname">get_versions_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.get_versions_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a list of version strings</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.make_server_app">
+<code class="descclassname">neat.</code><code class="descname">make_server_app</code><span class="sig-paren">(</span><em>mode='dev'</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.make_server_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>create and return the server app</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>mode</strong> : string, default None</p>
+<blockquote class="last">
+<div><p>version of the app to create (&#8216;prod&#8217;,&#8217;dev&#8217;,&#8217;notebook&#8217;,&#8217;test&#8217;)</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.open_case">
+<code class="descclassname">neat.</code><code class="descname">open_case</code><span class="sig-paren">(</span><em>case</em>, <em>mode='notebook'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.open_case" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a new pcl if necessary
+open and return a new version of this case</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>case</strong> : string</p>
+<blockquote class="last">
+<div><p>an opened version of this case</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.print_versions">
+<code class="descclassname">neat.</code><code class="descname">print_versions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.print_versions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print all the versions of software that kdbpy relies on.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.run">
+<code class="descclassname">neat.</code><code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neat.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>run the neat app</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="neat.test">
+<code class="descclassname">neat.</code><code class="descname">test</code><span class="sig-paren">(</span><em>verbose=False</em>, <em>junitfile=None</em>, <em>exit=False</em><span class="sig-paren">)</span><a class="headerlink" href="#neat.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the full neat test suite, outputting
+the results of the tests to sys.stdout.</p>
+<p>This uses py.test to discover which tests to
+run, and runs tests in any &#8216;tests&#8217; subdirectory
+within the neat module.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>verbose</strong> : int, optional</p>
+<blockquote>
+<div><p>Value 0 prints very little, 1 prints a little bit,
+and 2 prints the test names while testing.</p>
+</div></blockquote>
+<p><strong>junitfile</strong> : string, optional</p>
+<blockquote>
+<div><p>If provided, writes the test results to an junit xml
+style xml file. This is useful for running the tests
+in a CI server such as Jenkins.</p>
+</div></blockquote>
+<p><strong>exit</strong> : bool, optional</p>
+<blockquote class="last">
+<div><p>If True, the function will call sys.exit with an
+error code after the tests are finished.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="National Analytics Exam Tool (NEAT)"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.6-293-g7df05a2-dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
