@@ -1,0 +1,11 @@
+{
+  "name": "010",
+  "version": "1.0.0",
+  "description": "fake nit",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --content-base ."
+  },
+  "author": "bo",
+  "license": "ISC"
+}
