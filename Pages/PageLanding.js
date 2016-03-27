@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router'
 export default React.createClass({
 
     render() {
@@ -10,9 +10,9 @@ export default React.createClass({
                         Powered by the Quantitative Analytics Unit
                     </p>
                     <p>
-                        <button className="pure-button pure-button-primary">New Case</Link>
+                        <Link to="/staging" className="pure-button pure-button-primary">New Case</Link>
                         &nbsp;
-                        <button className="pure-button pure-button-primary">Open Case</Link>
+                        <Link to="/staging" className="pure-button pure-button-primary">Open Case</Link>
                     </p>
             </div>
         );
