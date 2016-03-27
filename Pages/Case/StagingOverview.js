@@ -1,14 +1,15 @@
-/** @jsx React.DOM */
+import React from 'react';
 
-var PageStagingOverview = React.createClass({
-  
+const StagingOverview = React.createClass({
+
     render: function() {
         return (
             <div>
-                <div className="content">
-                    <StagingOverview/>
-                </div>
+                
+                    Hello!
+
             </div>
         );
     }
 });
+export default StagingOverview;

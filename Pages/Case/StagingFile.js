@@ -1,9 +1,8 @@
-/** @jsx React.DOM */
+import React from "react"
+const StagingFile = React.createClass({
 
-var PageStagingFile = React.createClass({
-  
     render: function() {
-    
+
         return (
             <div>
                 <div className="content">
@@ -13,3 +12,5 @@ var PageStagingFile = React.createClass({
         );
     }
 });
+
+export default StagingFile;

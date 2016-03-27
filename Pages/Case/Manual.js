@@ -1,7 +1,6 @@
-/** @jsx React.DOM */
+import React from 'react';
+const PageManual = React.createClass({
 
-var PageManual = React.createClass({
-  
     render: function() {
         return (
             <div>
@@ -19,7 +18,7 @@ var PageManual = React.createClass({
                     <p>
                         Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
                     </p>
-                    
+
                     <h1 className="content-subhead">Reports</h1>
                     <p>
                         Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
@@ -39,3 +38,4 @@ var PageManual = React.createClass({
         );
     }
 });
+export default PageManual;

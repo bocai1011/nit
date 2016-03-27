@@ -1,7 +1,5 @@
-/** @jsx React.DOM */
-//<li className={App.state.page === this.props.page ? "menu-item-divided pure-menu-selected" : null}>
 var SideBarItem = React.createClass({
-  
+
     render: function() {
         return (
             <li>
@@ -12,7 +10,7 @@ var SideBarItem = React.createClass({
 });
 
 var SideBar = React.createClass({
-  
+
     render: function() {
         return (
             <div id="menu">

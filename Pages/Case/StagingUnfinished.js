@@ -1,17 +1,17 @@
-/** @jsx React.DOM */
+import React from 'react';
+const PageStagingUnfinished = React.createClass({
 
-var PageStagingUnfinished = React.createClass({
-  
     render: function() {
         return (
             <div>
                 <div className="content">
                     <h1 className="content-subhead">Staging incomplete</h1>
                     <p>
-                        Please finish <Link to="staging" params={{hash:"a4b8e11c"}}>staging</Link> before proceeding.
+                        Please finish <Link to="staging">staging</Link> before proceeding.
                     </p>
                 </div>
             </div>
         );
     }
 });
+export default PageStagingUnfinished;

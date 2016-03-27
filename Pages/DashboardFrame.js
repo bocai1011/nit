@@ -1,7 +1,6 @@
 import React from 'react'
-import { render } from 'react-dom'
-import DashboardHeader from '../../Components/DashboardHeader.js'
-import MarketingFooter from '../../Components/MarketingFooter.js'
+import DashboardHeader from '../Components/DashboardHeader.js'
+import MarketingFooter from '../Components/MarketingFooter.js'
 
 export var recentProj = [
     { name:"Wemake Dahmoney Investments", },
@@ -11,14 +10,13 @@ export var recentProj = [
 ]
 
 export default React.createClass({
-  
+
     render: function() {
         return (
-            <div className="dashboard">
-                <DashboardHeader/>  
+            <div className="row">
                 {this.props.children}
                 <MarketingFooter/>
-            </div>        
+            </div>
         );
     }
 });
